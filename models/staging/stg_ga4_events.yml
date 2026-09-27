@@ -19,6 +19,7 @@ models:
         tests: [not_null]
       - name: channel
         tests:
+          - not_null
           - accepted_values:
               arguments:
                 values: ['Direct','Organic Search','Paid Search','Referral','Social','Email']
