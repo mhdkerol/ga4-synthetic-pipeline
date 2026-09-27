@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: ga4_synthetic_raw
+    database: ga4-synthetic-pipeline-509814
+    schema: ga4_synthetic_raw
+    tables:
+      - name: raw_ga4_events
+        description: "Synthetic GA4 BigQuery export events with multi-touch journeys. Fabricated data — see README for disclosure."
+      - name: raw_ad_spend
+        description: "Synthetic daily ad spend by channel/campaign, aligned to GA4 traffic_source.medium values."

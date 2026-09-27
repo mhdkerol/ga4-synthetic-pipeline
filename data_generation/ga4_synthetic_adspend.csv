@@ -1,0 +1,1015 @@
+event_date,channel,campaign,impressions,clicks,spend,currency
+20260628,Organic Search,Organic,1112,12,0.0,USD
+20260628,Paid Search,Brand_Exact,3348,132,129.24,USD
+20260628,Paid Search,Generic_Ecommerce,18356,568,698.37,USD
+20260628,Paid Search,Competitor_Terms,14348,387,407.62,USD
+20260628,Referral,Affiliate_Program,3017,121,0.0,USD
+20260628,Email,Weekly_Newsletter,18589,458,25.52,USD
+20260628,Email,Abandoned_Cart,7967,387,25.01,USD
+20260628,Email,Promo_Blast,12454,225,11.0,USD
+20260628,Social,Prospecting_Lookalike,6107,224,134.3,USD
+20260628,Social,Retargeting_Cart,7696,340,269.94,USD
+20260628,Social,Awareness_Video,9273,123,100.46,USD
+20260629,Organic Search,Organic,3958,67,0.0,USD
+20260629,Paid Search,Brand_Exact,19621,588,641.86,USD
+20260629,Paid Search,Generic_Ecommerce,4092,72,76.03,USD
+20260629,Paid Search,Competitor_Terms,15837,577,890.11,USD
+20260629,Referral,Affiliate_Program,4598,218,0.0,USD
+20260629,Referral,Affiliate_Program,4598,218,0.0,USD
+20260629,Email,Weekly_Newsletter,9130,534,31.53,USD
+20260629,Email,Abandoned_Cart,17135,693,30.37,USD
+20260629,Email,Promo_Blast,518,20,1.04,USD
+20260629,Social,Prospecting_Lookalike,8346,107,86.17,USD
+20260629,Social,Retargeting_Cart,17955,867,487.02,USD
+20260629,Social,Awareness_Video,14365,836,687.11,USD
+20260630,Organic Search,Organic,3259,103,0.0,USD
+20260630,Paid Search,Brand_Exact,8040,316,304.72,USD
+20260630,Paid Search,Generic_Ecommerce,11327,153,168.73,USD
+20260630,Paid Search,Competitor_Terms,19211,745,823.82,USD
+20260630,Referral,Affiliate_Program,3102,96,0.0,USD
+20260630,Email,Weekly_Newsletter,13693,635,38.11,USD
+20260630,Email,Abandoned_Cart,6512,155,7.17,USD
+20260630,Email,Promo_Blast,2157,91,,USD
+20260630,Social,Prospecting_Lookalike,8245,151,102.35,USD
+20260630,Social,Retargeting_Cart,13293,309,239.42,USD
+20260630,Social,Awareness_Video,18711,806,546.6,USD
+20260701,Organic Search,Organic,699,33,0.0,USD
+20260701,Paid Search,Brand_Exact,17140,240,257.16,USD
+20260701,Paid Search,Generic_Ecommerce,19167,427,562.24,USD
+20260701,Paid Search,Competitor_Terms,9044,182,252.93,USD
+20260701,Referral,Affiliate_Program,2790,157,,USD
+20260701,Email,Weekly_Newsletter,3776,51,2.31,USD
+20260701,Email,Abandoned_Cart,12608,305,15.54,USD
+20260701,Email,Promo_Blast,17832,185,11.18,USD
+20260701,Social,Prospecting_Lookalike,4282,233,177.38,USD
+20260701,Social,Retargeting_Cart,9150,322,193.72,USD
+20260701,Social,Awareness_Video,1944,19,14.64,USD
+20260702,Organic Search,Organic,3703,140,0.0,USD
+20260702,Paid Search,Brand_Exact,12598,492,516.04,USD
+20260702,Paid Search,Generic_Ecommerce,1807,99,107.52,USD
+20260702,Paid Search,Competitor_Terms,13816,810,1141.85,USD
+20260702,Referral,Affiliate_Program,1650,89,0.0,USD
+20260702,Email,Weekly_Newsletter,8631,201,12.0,USD
+20260702,Email,Abandoned_Cart,15583,428,25.9,USD
+20260702,Email,Promo_Blast,9629,512,32.86,USD
+20260702,Social,Prospecting_Lookalike,18070,479,253.38,USD
+20260702,Social,Retargeting_Cart,1753,27,17.85,USD
+20260702,Social,Awareness_Video,13122,721,419.46,USD
+20260703,Organic Search,Organic,1814,51,0.0,USD
+20260703,Paid Search,Brand_Exact,10340,365,496.45,USD
+20260703,Paid Search,Generic_Ecommerce,12923,566,849.95,USD
+20260703,Paid Search,Generic_Ecommerce,12923,566,849.95,USD
+20260703,Paid Search,Competitor_Terms,9901,203,290.59,USD
+20260703,Referral,Affiliate_Program,4387,147,0.0,USD
+20260703,Email,Weekly_Newsletter,11483,168,10.72,USD
+20260703,Email,Abandoned_Cart,2014,44,2.28,USD
+20260703,Email,Promo_Blast,6871,315,15.62,USD
+20260703,Social,Prospecting_Lookalike,3992,195,115.27,USD
+20260703,Social,Retargeting_Cart,4476,146,113.95,USD
+20260703,Social,Awareness_Video,15002,609,459.04,USD
+20260704,Organic Search,Organic,4088,132,0.0,USD
+20260704,Paid Search,Brand_Exact,8339,197,198.28,USD
+20260704,Paid Search,Generic_Ecommerce,5034,88,104.7,USD
+20260704,Paid Search,Competitor_Terms,15767,485,525.79,USD
+20260704,Referral,Affiliate_Program,4916,142,0.0,USD
+20260704,Email,Weekly_Newsletter,14230,525,30.64,USD
+20260704,Email,Abandoned_Cart,16413,187,9.05,USD
+20260704,Email,Promo_Blast,4682,276,14.73,USD
+20260704,Social,Prospecting_Lookalike,14544,244,163.49,USD
+20260704,Social,Retargeting_Cart,12923,309,256.2,USD
+20260704,Social,Awareness_Video,2206,132,83.65,USD
+20260705,Organic Search,Organic,2225,44,0.0,USD
+20260705,Paid Search,Brand_Exact,7642,254,282.89,USD
+20260705,Paid Search,Generic_Ecommerce,5866,341,349.48,USD
+20260705,Paid Search,Competitor_Terms,13497,770,830.83,USD
+20260705,Referral,Affiliate_Program,2670,140,0.0,USD
+20260705,Email,Weekly_Newsletter,14537,626,26.12,USD
+20260705,Email,Abandoned_Cart,14705,853,47.67,USD
+20260705,Email,Promo_Blast,9350,381,24.0,USD
+20260705,Social,Prospecting_Lookalike,11061,581,458.98,USD
+20260705,Social,Retargeting_Cart,12918,346,235.5,USD
+20260705,Social,Awareness_Video,9663,521,389.65,USD
+20260706,Organic Search,Organic,3529,121,0.0,USD
+20260706,Paid Search,Brand_Exact,3549,87,104.63,USD
+20260706,Paid Search,Generic_Ecommerce,11764,367,516.57,USD
+20260706,Paid Search,Competitor_Terms,4453,205,235.61,USD
+20260706,Referral,Affiliate_Program,4166,99,0.0,USD
+20260706,Email,Weekly_Newsletter,10207,218,,USD
+20260706,Email,Abandoned_Cart,2286,86,4.94,USD
+20260706,Email,Promo_Blast,19310,467,24.27,USD
+20260706,Social,Prospecting_Lookalike,4238,216,140.45,USD
+20260706,Social,Retargeting_Cart,18943,1088,595.88,USD
+20260706,Social,Awareness_Video,7895,385,247.79,USD
+20260707,Organic Search,Organic,4858,199,0.0,USD
+20260707,Paid Search,Brand_Exact,3160,56,-59.6,USD
+20260707,Paid Search,Generic_Ecommerce,10043,116,131.41,USD
+20260707,Paid Search,Competitor_Terms,9168,452,603.44,USD
+20260707,Referral,Affiliate_Program,1420,78,0.0,USD
+20260707,Email,Weekly_Newsletter,19151,1073,54.7,USD
+20260707,Email,Abandoned_Cart,18194,631,26.51,USD
+20260707,email,Promo_Blast,3492,74,4.21,USD
+20260707,Social,Prospecting_Lookalike,9331,362,278.02,USD
+20260707,Social,Retargeting_Cart,19680,625,490.39,USD
+20260707,Social,Awareness_Video,3927,207,129.83,USD
+20260708,Organic Search,Organic,4706,55,0.0,USD
+20260708,Paid Search,Brand_Exact,537,23,29.57,USD
+20260708,Paid Search,Generic_Ecommerce,14984,719,778.06,USD
+20260708,Paid Search,Competitor_Terms,4478,51,68.24,USD
+20260708,Paid Search,Competitor_Terms,4478,51,68.24,USD
+20260708,Referral,Affiliate_Program,3542,51,0.0,USD
+20260708,Email,Weekly_Newsletter,16830,953,45.07,USD
+20260708,Email,Abandoned_Cart,15467,580,28.76,USD
+20260708,Email,Promo_Blast,9552,464,28.47,USD
+20260708,Email,Promo_Blast,9552,464,28.47,USD
+20260708,Social,Prospecting_Lookalike,10283,533,377.62,USD
+20260708,Social,Retargeting_Cart,11393,428,298.15,USD
+20260708,Social,Awareness_Video,19236,560,446.99,USD
+20260709,Organic Search,Organic,3323,97,0.0,USD
+20260709,Paid Search,Brand_Exact,16959,988,1145.29,USD
+20260709,Paid Search,Generic_Ecommerce,1002,46,55.48,USD
+20260709,Paid Search,Competitor_Terms,11593,477,571.68,USD
+20260709,Referral,Affiliate_Program,2794,115,0.0,USD
+20260709,Email,Weekly_Newsletter,9916,593,34.79,USD
+20260709,Email,Abandoned_Cart,15038,275,13.06,USD
+20260709,Email,Promo_Blast,14612,252,13.43,USD
+20260709,Social,Prospecting_Lookalike,13035,534,319.48,USD
+20260709,Social,Retargeting_Cart,8866,384,311.86,USD
+20260709,Social,Awareness_Video,11823,702,433.29,USD
+20260710,Organic Search,Organic,3351,176,0.0,USD
+20260710,Paid Search,Brand_Exact,1218,71,96.2,USD
+20260710,Paid Search,Generic_Ecommerce,2107,117,164.63,USD
+20260710,Paid Search,Competitor_Terms,12044,252,270.67,USD
+20260710,Referral,Affiliate_Program,1320,54,0.0,USD
+20260710,Email,Weekly_Newsletter,4806,69,3.27,USD
+20260710,Email,Abandoned_Cart,12488,456,28.65,USD
+20260710,Email,Promo_Blast,10171,481,23.31,USD
+20260710,social,Prospecting_Lookalike,13522,789,616.6,USD
+20260710,Social,Retargeting_Cart,15402,437,333.62,USD
+20260710,Social,Awareness_Video,8161,273,196.93,USD
+20260711,Organic Search,Organic,4003,222,0.0,USD
+20260711,Paid Search,Brand_Exact,16642,263,289.53,USD
+20260711,Paid Search,Generic_Ecommerce,18201,563,791.22,USD
+20260711,Paid Search,Competitor_Terms,13873,790,891.0,USD
+20260711,Referral,Affiliate_Program,3171,47,0.0,USD
+20260711,Email,Weekly_Newsletter,6719,392,24.98,USD
+20260711,Email,Abandoned_Cart,1199,15,0.73,USD
+20260711,Email,Promo_Blast,18660,379,17.21,USD
+20260711,Social,Prospecting_Lookalike,592,14,11.76,USD
+20260711,social,Retargeting_Cart,1344,22,14.0,USD
+20260711,Social,Awareness_Video,4653,219,151.32,USD
+20260712,Organic Search,Organic,1093,35,0.0,USD
+20260712,Paid Search,Brand_Exact,10383,341,524.6,USD
+20260712,Paid Search,Generic_Ecommerce,16565,755,925.73,USD
+20260712,Paid Search,Competitor_Terms,19681,736,850.16,USD
+20260712,Referral,Affiliate_Program,1012,50,0.0,USD
+20260712,Email,Weekly_Newsletter,14592,475,21.71,USD
+20260712,Email,Abandoned_Cart,14484,371,17.2,USD
+20260712,Email,Promo_Blast,3297,48,2.04,USD
+20260712,Social,Prospecting_Lookalike,18902,719,530.45,USD
+20260712,Social,Retargeting_Cart,2185,127,90.82,USD
+20260712,Social,Awareness_Video,7848,410,259.85,USD
+20260713,Organic Search,Organic,3715,194,0.0,USD
+20260713,Organic Search,Organic,3715,194,0.0,USD
+20260713,Paid Search,Brand_Exact,9263,106,119.14,USD
+20260713,Paid Search,Generic_Ecommerce,5194,199,238.89,USD
+20260713,Paid Search,Competitor_Terms,7549,217,267.38,USD
+20260713,Referral,Affiliate_Program,895,48,0.0,USD
+20260713,Email,Weekly_Newsletter,14394,493,25.17,USD
+20260713,Email,Abandoned_Cart,9781,429,23.52,USD
+20260713,Email,Promo_Blast,2295,23,1.09,USD
+20260713,Social,Prospecting_Lookalike,753,26,17.16,USD
+20260713,Social,Retargeting_Cart,12105,164,131.21,USD
+20260713,Social,Awareness_Video,19366,609,396.73,USD
+20260714,Organic Search,Organic,1607,80,0.0,USD
+20260714,Paid Search,Brand_Exact,8472,269,322.87,USD
+20260714,Paid Search,Generic_Ecommerce,6009,83,111.21,USD
+20260714,Paid Search,Competitor_Terms,5339,116,121.55,USD
+20260714,Referral,Affiliate_Program,1651,95,0.0,USD
+20260714,Email,Weekly_Newsletter,18997,800,51.73,USD
+20260714,Email,Abandoned_Cart,15865,509,24.21,USD
+20260714,Email,Promo_Blast,15308,181,8.91,USD
+20260714,Social,Prospecting_Lookalike,19966,705,472.62,USD
+20260714,Social,Retargeting_Cart,19232,819,511.46,USD
+20260714,Social,Awareness_Video,11753,694,379.9,USD
+20260715,Organic Search,Organic,4493,162,0.0,USD
+20260715,Paid Search,Brand_Exact,2215,109,146.97,USD
+20260715,Paid Search,Generic_Ecommerce,5427,144,188.59,USD
+20260715,Paid Search,Competitor_Terms,13343,219,303.38,USD
+20260715,Referral,Affiliate_Program,1246,54,0.0,USD
+20260715,Email,Weekly_Newsletter,14374,509,20.59,USD
+20260715,Email,Abandoned_Cart,6791,144,6.26,USD
+20260715,Email,Promo_Blast,17753,211,10.22,USD
+20260715,Social,Prospecting_Lookalike,5924,272,145.3,USD
+20260715,Social,Retargeting_Cart,15210,330,197.25,USD
+20260715,Social,Awareness_Video,19191,1136,761.17,USD
+20260716,Organic Search,Organic,1835,91,0.0,USD
+20260716,Paid Search,Brand_Exact,3861,175,222.17,USD
+20260716,Paid Search,Generic_Ecommerce,17321,300,366.75,USD
+20260716,Paid Search,Competitor_Terms,1373,42,50.31,USD
+20260716,Referral,Affiliate_Program,2810,158,0.0,USD
+20260716,email,Weekly_Newsletter,15981,716,31.12,USD
+20260716,Email,Abandoned_Cart,8886,184,8.05,USD
+20260716,Email,Promo_Blast,8286,207,8.53,USD
+20260716,Social,Prospecting_Lookalike,16878,672,353.03,USD
+20260716,Social,Retargeting_Cart,12061,265,173.68,USD
+20260716,Social,Awareness_Video,17737,659,511.11,USD
+20260717,Organic Search,Organic,3369,198,,USD
+20260717,Paid Search,Brand_Exact,3896,189,264.81,USD
+20260717,Paid Search,Generic_Ecommerce,6237,321,440.03,USD
+20260717,Paid Search,Competitor_Terms,15497,183,197.81,USD
+20260717,Referral,Affiliate_Program,3462,205,0.0,USD
+20260717,Email,Weekly_Newsletter,2066,110,5.31,USD
+20260717,Email,Abandoned_Cart,13169,354,15.81,USD
+20260717,Email,Promo_Blast,3207,148,6.21,USD
+20260717,Social,Prospecting_Lookalike,3123,82,50.52,USD
+20260717,Social,Retargeting_Cart,15151,183,146.91,USD
+20260717,Social,Awareness_Video,2379,32,23.27,USD
+20260718,Organic Search,Organic,1369,71,0.0,USD
+20260718,Paid Search,Brand_Exact,12366,360,468.12,USD
+20260718,Paid Search,Generic_Ecommerce,3019,116,148.21,USD
+20260718,Paid Search,Competitor_Terms,6596,230,274.2,USD
+20260718,Referral,Affiliate_Program,2539,113,0.0,USD
+20260718,Email,Weekly_Newsletter,15085,903,54.42,USD
+20260718,Email,Abandoned_Cart,18522,687,42.79,USD
+20260718,Email,Promo_Blast,12345,437,18.81,USD
+20260718,Email,Promo_Blast,12345,437,18.81,USD
+20260718,Social,Prospecting_Lookalike,18654,720,483.77,USD
+20260718,Social,Retargeting_Cart,13546,812,611.95,USD
+20260718,Social,Awareness_Video,10888,458,305.14,USD
+20260719,Organic Search,Organic,1690,81,0.0,USD
+20260719,Paid Search,Brand_Exact,10465,190,219.18,USD
+20260719,Paid Search,Generic_Ecommerce,3084,69,92.53,USD
+20260719,Paid Search,Competitor_Terms,16968,713,937.66,USD
+20260719,Referral,Affiliate_Program,2965,154,0.0,USD
+20260719,Email,Weekly_Newsletter,19399,450,20.37,USD
+20260719,Email,Abandoned_Cart,18377,449,28.7,USD
+20260719,Email,Promo_Blast,2891,128,5.63,USD
+20260719,Social,Prospecting_Lookalike,10963,512,409.47,USD
+20260719,Social,Retargeting_Cart,10956,241,134.92,USD
+20260719,Social,Awareness_Video,14201,318,254.79,USD
+20260720,organic search,Organic,1505,52,0.0,USD
+20260720,Paid Search,Brand_Exact,17062,560,618.48,USD
+20260720,Paid Search,Generic_Ecommerce,15920,386,372.45,USD
+20260720,Paid Search,Competitor_Terms,13713,388,465.74,USD
+20260720,Referral,Affiliate_Program,4330,140,0.0,USD
+20260720,Email,Weekly_Newsletter,3668,108,6.47,USD
+20260720,Email,Abandoned_Cart,17182,516,21.16,USD
+20260720,Email,Promo_Blast,5380,216,11.42,USD
+20260720,Social,Prospecting_Lookalike,10305,408,279.43,USD
+20260720,Social,Retargeting_Cart,1045,29,21.43,USD
+20260720,Social,Awareness_Video,1373,54,32.74,USD
+20260721,Organic Search,Organic,620,24,0.0,USD
+20260721,Paid Search,Brand_Exact,8436,97,148.31,USD
+20260721,Paid Search,Generic_Ecommerce,7181,219,312.07,USD
+20260721,Paid Search,Competitor_Terms,5024,180,233.38,USD
+20260721,Referral,Affiliate_Program,3965,220,0.0,USD
+20260721,Email,Weekly_Newsletter,9162,371,16.62,USD
+20260721,Email,Abandoned_Cart,10252,497,28.64,USD
+20260721,Email,Promo_Blast,9460,230,12.5,USD
+20260721,Social,Prospecting_Lookalike,5299,129,79.14,USD
+20260721,Social,Retargeting_Cart,16198,335,264.34,USD
+20260721,Social,Awareness_Video,19729,433,232.3,USD
+20260722,Organic Search,Organic,2905,133,-0.0,USD
+20260722,Paid Search,Brand_Exact,13833,589,876.66,USD
+20260722,Paid Search,Generic_Ecommerce,9852,416,625.98,USD
+20260722,Paid Search,Competitor_Terms,1722,95,101.18,USD
+20260722,Referral,Affiliate_Program,3452,170,0.0,USD
+20260722,Email,Weekly_Newsletter,10277,394,16.82,USD
+20260722,Email,Abandoned_Cart,16684,908,39.37,USD
+20260722,Email,Promo_Blast,15537,658,,USD
+20260722,Social,Prospecting_Lookalike,6829,128,102.18,USD
+20260722,Social,Retargeting_Cart,3625,69,39.03,USD
+20260722,Social,Awareness_Video,9248,533,329.46,USD
+20260723,Organic Search,Organic,708,30,0.0,USD
+20260723,Paid Search,Brand_Exact,10690,475,638.03,USD
+20260723,Paid Search,Generic_Ecommerce,16169,285,401.46,USD
+20260723,Paid Search,Competitor_Terms,18113,907,1320.01,USD
+20260723,Referral,Affiliate_Program,4504,145,0.0,USD
+20260723,Email,Weekly_Newsletter,17063,343,18.32,USD
+20260723,Email,Abandoned_Cart,19608,675,42.17,USD
+20260723,Email,Promo_Blast,18978,244,12.58,USD
+20260723,Social,Prospecting_Lookalike,7640,297,158.81,USD
+20260723,Social,Retargeting_Cart,2761,163,109.77,USD
+20260723,Social,Awareness_Video,14274,409,331.16,USD
+20260724,Organic Search,Organic,4617,76,0.0,USD
+20260724,Paid Search,Brand_Exact,7797,403,569.72,USD
+20260724,Paid Search,Generic_Ecommerce,12928,661,732.72,USD
+20260724,Paid Search,Competitor_Terms,4197,48,65.09,USD
+20260724,Referral,Affiliate_Program,751,11,0.0,USD
+20260724,Email,Weekly_Newsletter,13681,437,23.38,USD
+20260724,Email,Abandoned_Cart,8173,415,24.19,USD
+20260724,Email,Promo_Blast,10388,559,36.14,USD
+20260724,Social,Prospecting_Lookalike,19887,1073,875.85,USD
+20260724,Social,Retargeting_Cart,12989,640,399.1,USD
+20260724,Social,Awareness_Video,16016,353,209.41,USD
+20260725,Organic Search,Organic,3580,209,0.0,USD
+20260725,Paid Search,Brand_Exact,15238,797,809.34,USD
+20260725,Paid Search,Generic_Ecommerce,1795,96,103.0,USD
+20260725,Paid Search,Competitor_Terms,11410,287,432.05,USD
+20260725,Referral,Affiliate_Program,4123,229,0.0,USD
+20260725,Email,Weekly_Newsletter,9775,283,15.1,USD
+20260725,Email,Abandoned_Cart,3731,187,10.86,USD
+20260725,Email,Promo_Blast,1998,76,3.46,USD
+20260725,Social,Prospecting_Lookalike,14183,351,204.9,USD
+20260725,Social,Retargeting_Cart,11561,264,207.77,USD
+20260725,Social,Awareness_Video,12040,222,167.41,USD
+20260726,Organic Search,Organic,681,24,0.0,USD
+20260726,Organic Search,Organic,681,24,0.0,USD
+20260726,Paid Search,Brand_Exact,5005,260,-285.7,USD
+20260726,paid search,Generic_Ecommerce,16333,701,679.58,USD
+20260726,Paid Search,Competitor_Terms,18055,1062,1030.44,USD
+20260726,Referral,Affiliate_Program,1076,60,0.0,USD
+20260726,Email,Weekly_Newsletter,13505,188,12.03,USD
+20260726,Email,Abandoned_Cart,3141,134,8.24,USD
+20260726,Email,Promo_Blast,2338,97,5.58,USD
+20260726,Social,Prospecting_Lookalike,3624,198,162.11,USD
+20260726,Social,Retargeting_Cart,9383,115,62.58,USD
+20260726,Social,Awareness_Video,10805,116,68.13,USD
+20260727,Organic Search,Organic,2651,48,0.0,USD
+20260727,Paid Search,Brand_Exact,5085,251,344.77,USD
+20260727,Paid Search,Generic_Ecommerce,8106,420,489.03,USD
+20260727,Paid Search,Competitor_Terms,1470,61,87.24,USD
+20260727,Referral,Affiliate_Program,1721,75,0.0,USD
+20260727,Email,Weekly_Newsletter,3188,74,3.66,USD
+20260727,Email,Abandoned_Cart,3498,35,1.67,USD
+20260727,Email,Promo_Blast,15207,575,30.37,USD
+20260727,Social,Prospecting_Lookalike,11130,591,309.69,USD
+20260727,Social,Retargeting_Cart,8454,326,187.49,USD
+20260727,Social,Awareness_Video,2573,47,28.66,USD
+20260728,Organic Search,Organic,4261,169,0.0,USD
+20260728,Paid Search,Brand_Exact,12948,650,752.52,USD
+20260728,Paid Search,Generic_Ecommerce,4960,124,163.92,USD
+20260728,Paid Search,Competitor_Terms,10957,269,370.41,USD
+20260728,Referral,Affiliate_Program,3418,96,0.0,USD
+20260728,Email,Weekly_Newsletter,1381,79,4.07,USD
+20260728,Email,Abandoned_Cart,13906,606,26.35,USD
+20260728,Email,Promo_Blast,12853,176,11.4,USD
+20260728,Social,Prospecting_Lookalike,14206,528,410.25,USD
+20260728,Social,Retargeting_Cart,3284,50,30.03,USD
+20260728,Social,Awareness_Video,13594,793,497.82,USD
+20260729,Organic Search,Organic,4449,168,0.0,USD
+20260729,Paid Search,Brand_Exact,16899,296,461.35,USD
+20260729,Paid Search,Generic_Ecommerce,5142,140,163.22,USD
+20260729,Paid Search,Competitor_Terms,15325,397,452.64,USD
+20260729,Referral,Affiliate_Program,1546,87,0.0,USD
+20260729,Email,Weekly_Newsletter,15640,337,16.89,USD
+20260729,Email,Weekly_Newsletter,15640,337,16.89,USD
+20260729,Email,Abandoned_Cart,6965,226,,USD
+20260729,Email,Promo_Blast,2550,99,5.94,USD
+20260729,Social,Prospecting_Lookalike,16539,601,437.35,USD
+20260729,Social,Retargeting_Cart,15503,633,496.57,USD
+20260729,Social,Awareness_Video,4889,125,74.69,USD
+20260730,Organic Search,Organic,1329,51,0.0,USD
+20260730,Paid Search,Brand_Exact,6176,233,292.13,USD
+20260730,Paid Search,Generic_Ecommerce,12264,706,883.04,USD
+20260730,Paid Search,Competitor_Terms,13906,615,743.77,USD
+20260730,Referral,Affiliate_Program,2006,49,0.0,USD
+20260730,Email,Weekly_Newsletter,16730,627,26.85,USD
+20260730,Email,Abandoned_Cart,1863,89,4.54,USD
+20260730,Email,Promo_Blast,8611,214,13.91,USD
+20260730,Social,Prospecting_Lookalike,4346,212,126.57,USD
+20260730,Social,Retargeting_Cart,14530,265,149.79,USD
+20260730,Social,Awareness_Video,9710,386,221.84,USD
+20260731,Organic Search,Organic,4414,261,0.0,USD
+20260731,Paid Search,Brand_Exact,9587,511,529.46,USD
+20260731,Paid Search,Generic_Ecommerce,13368,460,600.97,USD
+20260731,Paid Search,Competitor_Terms,3550,107,150.86,USD
+20260731,Referral,Affiliate_Program,4967,50,0.0,USD
+20260731,Email,Weekly_Newsletter,12238,642,38.45,USD
+20260731,Email,Abandoned_Cart,11079,569,27.56,USD
+20260731,Email,Promo_Blast,2086,25,1.39,USD
+20260731,Social,Prospecting_Lookalike,15459,155,128.86,USD
+20260731,Social,Retargeting_Cart,5709,306,246.3,USD
+20260731,Social,Awareness_Video,5923,74,53.53,USD
+20260801,Organic Search,Organic,979,9,0.0,USD
+20260801,Organic Search,Organic,979,9,0.0,USD
+20260801,Paid Search,Brand_Exact,11758,597,927.08,USD
+20260801,Paid Search,Generic_Ecommerce,3856,58,68.47,USD
+20260801,Paid Search,Competitor_Terms,5181,69,89.56,USD
+20260801,Referral,Affiliate_Program,1440,80,0.0,USD
+20260801,Email,Weekly_Newsletter,4535,179,8.88,USD
+20260801,Email,Abandoned_Cart,3260,73,4.02,USD
+20260801,Email,Abandoned_Cart,3260,73,4.02,USD
+20260801,Email,Promo_Blast,10384,210,11.59,USD
+20260801,Social,Prospecting_Lookalike,8342,289,160.87,USD
+20260801,Social,Retargeting_Cart,12332,699,393.46,USD
+20260801,Social,Awareness_Video,15934,919,,USD
+20260802,Organic Search,Organic,526,29,0.0,USD
+20260802,Paid Search,Brand_Exact,14379,648,654.13,USD
+20260802,Paid Search,Generic_Ecommerce,17254,967,1493.62,USD
+20260802,Paid Search,Competitor_Terms,2666,68,83.13,USD
+20260802,Referral,Affiliate_Program,1150,37,0.0,USD
+20260802,Email,Weekly_Newsletter,4996,225,9.92,USD
+20260802,Email,Abandoned_Cart,5971,170,9.99,USD
+20260802,Email,Promo_Blast,11477,577,27.0,USD
+20260802,Social,Prospecting_Lookalike,15415,547,294.3,USD
+20260802,Social,Retargeting_Cart,19305,843,-469.96,USD
+20260802,Social,Retargeting_Cart,19305,843,-469.96,USD
+20260802,Social,Awareness_Video,2006,67,43.18,USD
+20260803,Organic Search,Organic,3635,77,0.0,USD
+20260803,Paid Search,Brand_Exact,4412,154,231.18,USD
+20260803,Paid Search,Generic_Ecommerce,2758,148,218.98,USD
+20260803,Paid Search,Competitor_Terms,12588,252,327.17,USD
+20260803,Referral,Affiliate_Program,4241,253,0.0,USD
+20260803,email,Weekly_Newsletter,13936,156,8.35,USD
+20260803,Email,Abandoned_Cart,12829,672,39.1,USD
+20260803,Email,Promo_Blast,2462,144,6.27,USD
+20260803,Social,Prospecting_Lookalike,14035,632,405.15,USD
+20260803,Social,Retargeting_Cart,13422,184,129.64,USD
+20260803,Social,Awareness_Video,10822,609,394.46,USD
+20260804,Organic Search,Organic,1860,31,0.0,USD
+20260804,Paid Search,Brand_Exact,4456,163,250.82,USD
+20260804,Paid Search,Generic_Ecommerce,5664,285,325.62,USD
+20260804,Paid Search,Competitor_Terms,5360,78,86.5,USD
+20260804,Referral,Affiliate_Program,1624,18,0.0,USD
+20260804,Email,Weekly_Newsletter,5080,81,3.36,USD
+20260804,Email,Abandoned_Cart,3253,127,5.9,USD
+20260804,Email,Promo_Blast,15030,758,32.06,USD
+20260804,social,Prospecting_Lookalike,2159,39,27.55,USD
+20260804,Social,Retargeting_Cart,6162,170,138.58,USD
+20260804,Social,Awareness_Video,8553,362,246.93,USD
+20260805,Organic Search,Organic,3634,72,0.0,USD
+20260805,Paid Search,Brand_Exact,13033,639,751.12,USD
+20260805,Paid Search,Generic_Ecommerce,13226,311,303.42,USD
+20260805,Paid Search,Competitor_Terms,15956,581,825.08,USD
+20260805,Referral,Affiliate_Program,2383,87,0.0,USD
+20260805,Email,Weekly_Newsletter,13227,366,22.32,USD
+20260805,Email,Abandoned_Cart,12256,682,27.76,USD
+20260805,Email,Promo_Blast,6668,345,20.79,USD
+20260805,Social,Prospecting_Lookalike,2340,50,-29.56,USD
+20260805,Social,Retargeting_Cart,4775,129,74.52,USD
+20260805,Social,Awareness_Video,5141,250,198.78,USD
+20260806,Organic Search,Organic,3440,135,0.0,USD
+20260806,Paid Search,Brand_Exact,16464,699,744.1,USD
+20260806,Paid Search,Generic_Ecommerce,7815,338,489.65,USD
+20260806,Paid Search,Competitor_Terms,558,32,48.94,USD
+20260806,Referral,Affiliate_Program,2806,157,0.0,USD
+20260806,Email,Weekly_Newsletter,3049,66,4.26,USD
+20260806,Email,Abandoned_Cart,11501,371,17.3,USD
+20260806,Email,Promo_Blast,541,6,0.31,USD
+20260806,Social,Prospecting_Lookalike,12009,447,247.18,USD
+20260806,Social,Retargeting_Cart,5829,189,147.37,USD
+20260806,Social,Awareness_Video,11700,216,138.68,USD
+20260807,Organic Search,Organic,4154,187,0.0,USD
+20260807,Paid Search,Brand_Exact,11349,230,247.02,USD
+20260807,Paid Search,Generic_Ecommerce,9724,241,245.23,USD
+20260807,Paid Search,Competitor_Terms,625,19,21.6,USD
+20260807,Paid Search,Competitor_Terms,625,19,21.6,USD
+20260807,Referral,Affiliate_Program,1599,67,0.0,USD
+20260807,Email,Weekly_Newsletter,9183,133,7.13,USD
+20260807,Email,Abandoned_Cart,9127,291,13.56,USD
+20260807,Email,Promo_Blast,3668,52,2.53,USD
+20260807,Social,Prospecting_Lookalike,13184,671,440.21,USD
+20260807,Social,Retargeting_Cart,16106,401,259.97,USD
+20260807,Social,Awareness_Video,19226,843,608.3,USD
+20260808,Organic Search,Organic,1935,97,0.0,USD
+20260808,Paid Search,Brand_Exact,5345,276,307.67,USD
+20260808,paid search,Generic_Ecommerce,13520,508,748.78,USD
+20260808,Paid Search,Competitor_Terms,19753,713,863.98,USD
+20260808,Referral,Affiliate_Program,1020,57,0.0,USD
+20260808,Email,Weekly_Newsletter,13964,324,18.26,USD
+20260808,Email,Abandoned_Cart,13663,163,10.15,USD
+20260808,Email,Promo_Blast,12704,139,8.4,USD
+20260808,Social,Prospecting_Lookalike,3718,217,128.92,USD
+20260808,Social,Retargeting_Cart,14156,569,312.39,USD
+20260808,Social,Awareness_Video,17424,929,730.97,USD
+20260809,Organic Search,Organic,1311,64,0.0,USD
+20260809,Paid Search,Brand_Exact,2388,53,65.4,USD
+20260809,Paid Search,Generic_Ecommerce,17051,508,769.03,USD
+20260809,Paid Search,Competitor_Terms,16051,631,738.18,USD
+20260809,Referral,Affiliate_Program,2535,28,0.0,USD
+20260809,Email,Weekly_Newsletter,7876,345,16.12,USD
+20260809,Email,Abandoned_Cart,791,26,1.13,USD
+20260809,Email,Promo_Blast,10509,479,27.65,USD
+20260809,Social,Prospecting_Lookalike,7650,255,188.72,USD
+20260809,Social,Retargeting_Cart,12762,485,345.79,USD
+20260809,Social,Awareness_Video,9559,401,320.79,USD
+20260810,Organic Search,Organic,1428,51,0.0,USD
+20260810,Paid Search,Brand_Exact,10972,483,672.71,USD
+20260810,Paid Search,Generic_Ecommerce,13222,619,810.78,USD
+20260810,Paid Search,Competitor_Terms,18018,755,940.31,USD
+20260810,Referral,Affiliate_Program,4773,90,0.0,USD
+20260810,Email,Weekly_Newsletter,6498,372,23.25,USD
+20260810,Email,Abandoned_Cart,14278,705,34.04,USD
+20260810,Email,Promo_Blast,19622,765,42.47,USD
+20260810,Social,Prospecting_Lookalike,17861,445,239.22,USD
+20260810,Social,Retargeting_Cart,19158,1046,879.33,USD
+20260810,Social,Awareness_Video,11399,473,-273.14,USD
+20260811,Organic Search,Organic,1581,61,0.0,USD
+20260811,Paid Search,Brand_Exact,14570,439,675.71,USD
+20260811,paid search,Generic_Ecommerce,961,52,73.53,USD
+20260811,Paid Search,Competitor_Terms,7914,353,411.81,USD
+20260811,Referral,Affiliate_Program,574,14,0.0,USD
+20260811,Email,Weekly_Newsletter,4884,132,8.25,USD
+20260811,email,Abandoned_Cart,13718,150,6.84,USD
+20260811,Email,Promo_Blast,4535,128,7.2,USD
+20260811,Social,Prospecting_Lookalike,2092,83,44.45,USD
+20260811,Social,Retargeting_Cart,15059,436,304.27,USD
+20260811,Social,Awareness_Video,10366,321,177.45,USD
+20260812,Organic Search,Organic,1059,37,0.0,USD
+20260812,Paid Search,Brand_Exact,9117,470,725.62,USD
+20260812,Paid Search,Generic_Ecommerce,7305,324,404.48,USD
+20260812,Paid Search,Competitor_Terms,19313,839,880.52,USD
+20260812,Referral,Affiliate_Program,2296,96,0.0,USD
+20260812,Email,Weekly_Newsletter,1792,94,4.61,USD
+20260812,Email,Abandoned_Cart,2003,20,0.87,USD
+20260812,Email,Promo_Blast,9291,501,21.2,USD
+20260812,Social,Prospecting_Lookalike,9407,487,362.43,USD
+20260812,Social,Retargeting_Cart,4842,216,116.44,USD
+20260812,social,Awareness_Video,19143,840,486.28,USD
+20260813,Organic Search,Organic,1270,43,0.0,USD
+20260813,Paid Search,Brand_Exact,905,40,54.67,USD
+20260813,Paid Search,Generic_Ecommerce,11585,416,571.15,USD
+20260813,paid search,Competitor_Terms,13111,228,331.94,USD
+20260813,Referral,Affiliate_Program,4341,227,0.0,USD
+20260813,Email,Weekly_Newsletter,9614,120,5.47,USD
+20260813,Email,Abandoned_Cart,19277,624,38.32,USD
+20260813,Email,Promo_Blast,3863,116,4.74,USD
+20260813,Social,Prospecting_Lookalike,10481,571,401.27,USD
+20260813,Social,Retargeting_Cart,7804,407,255.55,USD
+20260813,Social,Awareness_Video,15328,240,184.03,USD
+20260814,Organic Search,Organic,2591,96,0.0,USD
+20260814,Paid Search,Brand_Exact,13909,213,282.55,USD
+20260814,Paid Search,Generic_Ecommerce,6744,309,316.62,USD
+20260814,paid search,Competitor_Terms,15262,501,658.11,USD
+20260814,Referral,Affiliate_Program,4732,268,0.0,USD
+20260814,Email,Weekly_Newsletter,19458,363,21.92,USD
+20260814,Email,Abandoned_Cart,13104,405,22.37,USD
+20260814,Email,Promo_Blast,10139,330,14.3,USD
+20260814,Social,Prospecting_Lookalike,18450,978,734.83,USD
+20260814,Social,Retargeting_Cart,10021,444,363.81,USD
+20260814,Social,Awareness_Video,18276,817,510.44,USD
+20260815,Organic Search,Organic,3619,158,0.0,USD
+20260815,Organic Search,Organic,3619,158,0.0,USD
+20260815,Paid Search,Brand_Exact,3988,44,46.08,USD
+20260815,Paid Search,Generic_Ecommerce,9891,436,456.87,USD
+20260815,Paid Search,Competitor_Terms,12253,621,634.34,USD
+20260815,Referral,Affiliate_Program,4797,141,0.0,USD
+20260815,Email,Weekly_Newsletter,13003,381,24.35,USD
+20260815,Email,Weekly_Newsletter,13003,381,24.35,USD
+20260815,Email,Abandoned_Cart,8735,176,10.86,USD
+20260815,Email,Promo_Blast,12550,599,32.15,USD
+20260815,Social,Prospecting_Lookalike,6313,373,202.99,USD
+20260815,Social,Retargeting_Cart,9645,364,204.67,USD
+20260815,Social,Awareness_Video,5572,66,54.24,USD
+20260816,Organic Search,Organic,2667,92,0.0,USD
+20260816,Paid Search,Brand_Exact,6525,235,336.46,USD
+20260816,Paid Search,Generic_Ecommerce,7491,323,374.24,USD
+20260816,Paid Search,Competitor_Terms,18893,967,,USD
+20260816,Referral,Affiliate_Program,2197,127,0.0,USD
+20260816,Email,Weekly_Newsletter,18202,840,34.12,USD
+20260816,Email,Abandoned_Cart,16451,200,12.49,USD
+20260816,Email,Promo_Blast,18128,664,36.97,USD
+20260816,Social,Prospecting_Lookalike,3905,79,62.36,USD
+20260816,Social,Retargeting_Cart,2863,135,76.95,USD
+20260816,Social,Awareness_Video,8754,331,233.97,USD
+20260817,Organic Search,Organic,3747,96,-0.0,USD
+20260817,Paid Search,Brand_Exact,19689,241,354.02,USD
+20260817,Paid Search,Generic_Ecommerce,3334,80,121.28,USD
+20260817,Paid Search,Competitor_Terms,7704,129,154.1,USD
+20260817,Referral,Affiliate_Program,3256,188,0.0,USD
+20260817,Email,Weekly_Newsletter,13413,494,31.46,USD
+20260817,Email,Abandoned_Cart,14021,775,47.5,USD
+20260817,Email,Promo_Blast,4255,81,4.86,USD
+20260817,Social,Prospecting_Lookalike,15614,659,358.35,USD
+20260817,Social,Retargeting_Cart,11341,315,232.52,USD
+20260817,Social,Awareness_Video,16420,534,384.65,USD
+20260818,Organic Search,Organic,2791,161,0.0,USD
+20260818,Paid Search,Brand_Exact,9566,497,517.17,USD
+20260818,Paid Search,Generic_Ecommerce,10509,360,369.11,USD
+20260818,Paid Search,Competitor_Terms,18149,359,502.65,USD
+20260818,Referral,Affiliate_Program,455,23,0.0,USD
+20260818,Email,Weekly_Newsletter,18184,611,36.28,USD
+20260818,email,Abandoned_Cart,10035,167,8.77,USD
+20260818,Email,Promo_Blast,5934,284,12.36,USD
+20260818,Social,Prospecting_Lookalike,5290,247,167.25,USD
+20260818,Social,Retargeting_Cart,12605,273,201.28,USD
+20260818,Social,Awareness_Video,2021,24,17.54,USD
+20260819,Organic Search,Organic,2357,91,0.0,USD
+20260819,Paid Search,Brand_Exact,3050,109,129.25,USD
+20260819,Paid Search,Generic_Ecommerce,16453,816,,USD
+20260819,Paid Search,Competitor_Terms,8036,111,149.42,USD
+20260819,Referral,Affiliate_Program,1169,50,0.0,USD
+20260819,Email,Weekly_Newsletter,19859,358,21.78,USD
+20260819,Email,Abandoned_Cart,17298,206,11.19,USD
+20260819,Email,Promo_Blast,18968,794,49.2,USD
+20260819,Social,Prospecting_Lookalike,15947,851,489.69,USD
+20260819,Social,Retargeting_Cart,6459,265,181.79,USD
+20260819,Social,Awareness_Video,2755,59,38.07,USD
+20260820,Organic Search,Organic,3638,186,0.0,USD
+20260820,Paid Search,Brand_Exact,17913,629,648.19,USD
+20260820,Paid Search,Generic_Ecommerce,14639,528,624.22,USD
+20260820,Paid Search,Competitor_Terms,12992,357,515.07,USD
+20260820,Referral,Affiliate_Program,2285,77,0.0,USD
+20260820,Email,Weekly_Newsletter,6693,68,,USD
+20260820,Email,Abandoned_Cart,12788,546,31.23,USD
+20260820,Email,Promo_Blast,8811,203,10.84,USD
+20260820,Social,Prospecting_Lookalike,7174,219,169.67,USD
+20260820,Social,Retargeting_Cart,10548,410,316.36,USD
+20260820,Social,Awareness_Video,8029,259,193.54,USD
+20260821,Organic Search,Organic,4710,191,0.0,USD
+20260821,Paid Search,Brand_Exact,5262,176,232.35,USD
+20260821,Paid Search,Generic_Ecommerce,13093,740,888.29,USD
+20260821,Paid Search,Competitor_Terms,6243,262,320.53,USD
+20260821,Referral,Affiliate_Program,475,23,0.0,USD
+20260821,Email,Weekly_Newsletter,509,29,1.22,USD
+20260821,Email,Abandoned_Cart,7063,253,14.78,USD
+20260821,Email,Promo_Blast,19601,537,34.41,USD
+20260821,Social,Prospecting_Lookalike,19338,197,113.65,USD
+20260821,Social,Retargeting_Cart,4334,217,180.31,USD
+20260821,Social,Awareness_Video,12856,490,377.42,USD
+20260822,Organic Search,Organic,424,14,0.0,USD
+20260822,Paid Search,Brand_Exact,10845,332,389.06,USD
+20260822,Paid Search,Generic_Ecommerce,13572,592,859.97,USD
+20260822,Paid Search,Competitor_Terms,19299,452,690.78,USD
+20260822,Referral,Affiliate_Program,2182,117,0.0,USD
+20260822,email,Weekly_Newsletter,3995,63,2.64,USD
+20260822,Email,Abandoned_Cart,1884,98,4.83,USD
+20260822,Email,Promo_Blast,9502,328,21.19,USD
+20260822,Social,Prospecting_Lookalike,2274,82,53.92,USD
+20260822,social,Retargeting_Cart,6227,204,114.06,USD
+20260822,Social,Awareness_Video,12933,505,316.01,USD
+20260823,Organic Search,Organic,4061,235,0.0,USD
+20260823,Paid Search,Brand_Exact,12462,656,739.82,USD
+20260823,Paid Search,Generic_Ecommerce,3772,173,249.54,USD
+20260823,Paid Search,Competitor_Terms,5400,181,174.82,USD
+20260823,Referral,Affiliate_Program,4574,210,0.0,USD
+20260823,Email,Weekly_Newsletter,5852,76,4.59,USD
+20260823,Email,Abandoned_Cart,12328,345,18.61,USD
+20260823,Email,Promo_Blast,7019,272,15.3,USD
+20260823,Social,Prospecting_Lookalike,17226,592,449.55,USD
+20260823,Social,Retargeting_Cart,5246,280,203.89,USD
+20260823,Social,Awareness_Video,2837,39,24.64,USD
+20260824,Organic Search,Organic,3439,81,0.0,USD
+20260824,Paid Search,Brand_Exact,14065,258,379.91,USD
+20260824,Paid Search,Generic_Ecommerce,3123,64,76.69,USD
+20260824,Paid Search,Competitor_Terms,13509,489,761.67,USD
+20260824,Referral,Affiliate_Program,3393,86,0.0,USD
+20260824,Email,Weekly_Newsletter,1436,16,0.78,USD
+20260824,Email,Abandoned_Cart,9426,352,15.27,USD
+20260824,Email,Promo_Blast,18980,602,33.71,USD
+20260824,social,Prospecting_Lookalike,3434,110,70.28,USD
+20260824,Social,Retargeting_Cart,4966,135,,USD
+20260824,Social,Awareness_Video,16132,402,309.1,USD
+20260825,Organic Search,Organic,1744,53,0.0,USD
+20260825,Paid Search,Brand_Exact,12898,271,273.04,USD
+20260825,Paid Search,Generic_Ecommerce,9408,227,319.11,USD
+20260825,Paid Search,Competitor_Terms,9989,155,191.15,USD
+20260825,Referral,Affiliate_Program,1446,18,0.0,USD
+20260825,Email,Weekly_Newsletter,768,16,0.7,USD
+20260825,Email,Abandoned_Cart,12669,420,25.11,USD
+20260825,Email,Promo_Blast,13358,181,9.37,USD
+20260825,Social,Prospecting_Lookalike,4496,264,198.6,USD
+20260825,Social,Retargeting_Cart,7026,232,178.77,USD
+20260825,Social,Awareness_Video,10727,609,348.07,USD
+20260826,Organic Search,Organic,4142,173,0.0,USD
+20260826,Paid Search,Brand_Exact,14726,386,409.32,USD
+20260826,Paid Search,Brand_Exact,14726,386,409.32,USD
+20260826,Paid Search,Generic_Ecommerce,1876,73,100.33,USD
+20260826,Paid Search,Competitor_Terms,16881,245,326.14,USD
+20260826,Referral,Affiliate_Program,1460,65,0.0,USD
+20260826,Email,Weekly_Newsletter,11880,597,30.43,USD
+20260826,Email,Abandoned_Cart,1793,61,3.11,USD
+20260826,Email,Promo_Blast,11892,311,16.08,USD
+20260826,social,Prospecting_Lookalike,17904,317,195.3,USD
+20260826,Social,Retargeting_Cart,12920,603,486.59,USD
+20260826,Social,Awareness_Video,2575,110,76.47,USD
+20260827,Organic Search,Organic,2519,65,0.0,USD
+20260827,Paid Search,Brand_Exact,4752,89,87.11,USD
+20260827,Paid Search,Generic_Ecommerce,13233,567,723.2,USD
+20260827,Paid Search,Competitor_Terms,2822,30,45.38,USD
+20260827,Referral,Affiliate_Program,697,19,0.0,USD
+20260827,Email,Weekly_Newsletter,9210,335,19.55,USD
+20260827,Email,Abandoned_Cart,3816,176,9.38,USD
+20260827,Email,Promo_Blast,6362,241,13.0,USD
+20260827,Social,Prospecting_Lookalike,14494,784,450.18,USD
+20260827,Social,Retargeting_Cart,15016,851,692.12,USD
+20260827,Social,Awareness_Video,14609,749,468.22,USD
+20260828,Organic Search,Organic,2281,63,-0.0,USD
+20260828,Paid Search,Brand_Exact,1034,37,57.57,USD
+20260828,Paid Search,Generic_Ecommerce,1211,58,88.51,USD
+20260828,Paid Search,Competitor_Terms,19230,341,335.08,USD
+20260828,Referral,Affiliate_Program,2108,48,0.0,USD
+20260828,Email,Weekly_Newsletter,11139,552,24.47,USD
+20260828,Email,Abandoned_Cart,10343,122,7.35,USD
+20260828,Email,Promo_Blast,14731,454,28.01,USD
+20260828,Social,Prospecting_Lookalike,874,36,26.12,USD
+20260828,Social,Retargeting_Cart,11209,393,232.56,USD
+20260828,Social,Awareness_Video,19349,681,403.27,USD
+20260829,Organic Search,Organic,4881,230,0.0,USD
+20260829,Paid Search,Brand_Exact,4919,167,180.17,USD
+20260829,Paid Search,Generic_Ecommerce,17678,394,395.18,USD
+20260829,paid search,Competitor_Terms,14052,438,512.02,USD
+20260829,Referral,Affiliate_Program,3064,125,0.0,USD
+20260829,Email,Weekly_Newsletter,7043,311,13.65,USD
+20260829,Email,Abandoned_Cart,5339,285,,USD
+20260829,Email,Promo_Blast,15247,511,24.68,USD
+20260829,social,Prospecting_Lookalike,18483,631,477.81,USD
+20260829,Social,Retargeting_Cart,17762,216,124.28,USD
+20260829,Social,Awareness_Video,773,10,7.35,USD
+20260830,Organic Search,Organic,2596,138,0.0,USD
+20260830,Paid Search,Brand_Exact,10836,370,487.76,USD
+20260830,Paid Search,Generic_Ecommerce,1204,14,21.19,USD
+20260830,Paid Search,Generic_Ecommerce,1204,14,21.19,USD
+20260830,Paid Search,Competitor_Terms,12031,334,381.23,USD
+20260830,Referral,Affiliate_Program,2310,124,0.0,USD
+20260830,Email,Weekly_Newsletter,5471,148,7.37,USD
+20260830,Email,Abandoned_Cart,7952,245,13.31,USD
+20260830,Email,Promo_Blast,4817,97,4.22,USD
+20260830,Social,Prospecting_Lookalike,17664,979,645.92,USD
+20260830,Social,Retargeting_Cart,5678,146,102.37,USD
+20260830,Social,Awareness_Video,1466,70,56.42,USD
+20260831,Organic Search,Organic,2442,42,0.0,USD
+20260831,Paid Search,Brand_Exact,19080,774,1019.99,USD
+20260831,Paid Search,Generic_Ecommerce,4893,171,226.2,USD
+20260831,Paid Search,Competitor_Terms,5006,91,99.71,USD
+20260831,Referral,Affiliate_Program,2023,95,0.0,USD
+20260831,Email,Weekly_Newsletter,16554,734,45.27,USD
+20260831,Email,Abandoned_Cart,12964,596,29.71,USD
+20260831,Email,Promo_Blast,1761,63,3.23,USD
+20260831,Social,Prospecting_Lookalike,13463,796,424.07,USD
+20260831,Social,Retargeting_Cart,14903,445,275.45,USD
+20260831,Social,Awareness_Video,2287,101,82.18,USD
+20260901,Organic Search,Organic,1672,81,0.0,USD
+20260901,Paid Search,Brand_Exact,6361,207,310.08,USD
+20260901,Paid Search,Generic_Ecommerce,5873,269,278.18,USD
+20260901,Paid Search,Competitor_Terms,13085,606,936.34,USD
+20260901,Referral,Affiliate_Program,1599,88,0.0,USD
+20260901,Email,Weekly_Newsletter,2181,67,3.2,USD
+20260901,Email,Abandoned_Cart,4811,279,11.18,USD
+20260901,Email,Promo_Blast,688,27,1.41,USD
+20260901,Social,Prospecting_Lookalike,715,15,10.47,USD
+20260901,Social,Retargeting_Cart,5358,68,43.07,USD
+20260901,Social,Awareness_Video,11349,635,340.32,USD
+20260902,Organic Search,Organic,4888,241,0.0,USD
+20260902,Paid Search,Brand_Exact,10307,269,403.1,USD
+20260902,Paid Search,Generic_Ecommerce,15927,266,366.22,USD
+20260902,Paid Search,Competitor_Terms,2406,37,51.72,USD
+20260902,Referral,Affiliate_Program,2552,80,0.0,USD
+20260902,Email,Weekly_Newsletter,18936,659,38.37,USD
+20260902,Email,Abandoned_Cart,10018,590,23.62,USD
+20260902,email,Promo_Blast,14086,432,20.88,USD
+20260902,Social,Prospecting_Lookalike,9728,221,119.79,USD
+20260902,Social,Retargeting_Cart,11421,309,233.43,USD
+20260902,Social,Awareness_Video,11573,649,438.54,USD
+20260903,Organic Search,Organic,3973,216,0.0,USD
+20260903,Paid Search,Brand_Exact,17574,438,611.0,USD
+20260903,Paid Search,Generic_Ecommerce,12086,160,167.93,USD
+20260903,Paid Search,Competitor_Terms,5938,228,272.17,USD
+20260903,Referral,Affiliate_Program,2776,126,0.0,USD
+20260903,Email,Weekly_Newsletter,10416,216,10.27,USD
+20260903,Email,Abandoned_Cart,15041,530,31.79,USD
+20260903,Email,Promo_Blast,17658,450,21.68,USD
+20260903,Social,Prospecting_Lookalike,4848,98,52.12,USD
+20260903,Social,Retargeting_Cart,1942,86,61.33,USD
+20260903,Social,Awareness_Video,10739,119,91.21,USD
+20260904,Organic Search,Organic,4560,118,0.0,USD
+20260904,Organic Search,Organic,4560,118,0.0,USD
+20260904,Paid Search,Brand_Exact,18837,672,728.41,USD
+20260904,Paid Search,Generic_Ecommerce,9782,378,401.73,USD
+20260904,Paid Search,Competitor_Terms,1450,48,65.53,USD
+20260904,Referral,Affiliate_Program,3852,157,0.0,USD
+20260904,Email,Weekly_Newsletter,15759,604,25.56,USD
+20260904,Email,Abandoned_Cart,15750,528,33.63,USD
+20260904,Email,Promo_Blast,6508,292,16.54,USD
+20260904,Social,Prospecting_Lookalike,16075,251,169.57,USD
+20260904,Social,Retargeting_Cart,17144,259,203.5,USD
+20260904,Social,Awareness_Video,17957,593,422.17,USD
+20260905,Organic Search,Organic,741,20,0.0,USD
+20260905,Paid Search,Brand_Exact,18343,820,872.36,USD
+20260905,Paid Search,Generic_Ecommerce,4246,168,207.94,USD
+20260905,Paid Search,Competitor_Terms,2780,110,150.84,USD
+20260905,Referral,Affiliate_Program,703,10,0.0,USD
+20260905,Referral,Affiliate_Program,703,10,0.0,USD
+20260905,Email,Weekly_Newsletter,5307,228,11.7,USD
+20260905,Email,Abandoned_Cart,10874,271,16.22,USD
+20260905,Email,Promo_Blast,11780,701,38.25,USD
+20260905,Social,Prospecting_Lookalike,2545,72,50.28,USD
+20260905,Social,Retargeting_Cart,9747,519,309.56,USD
+20260905,Social,Awareness_Video,13003,412,242.52,USD
+20260906,Organic Search,Organic,3151,163,0.0,USD
+20260906,Paid Search,Brand_Exact,1014,17,25.35,USD
+20260906,Paid Search,Generic_Ecommerce,14126,748,1119.12,USD
+20260906,Paid Search,Competitor_Terms,14397,541,665.44,USD
+20260906,Referral,Affiliate_Program,2139,97,0.0,USD
+20260906,Email,Weekly_Newsletter,16335,739,31.65,USD
+20260906,Email,Abandoned_Cart,9656,321,13.47,USD
+20260906,Email,Promo_Blast,3058,135,7.22,USD
+20260906,Social,Prospecting_Lookalike,853,28,19.23,USD
+20260906,Social,Retargeting_Cart,10154,248,131.81,USD
+20260906,Social,Awareness_Video,2512,104,73.62,USD
+20260907,Organic Search,Organic,423,10,0.0,USD
+20260907,Paid Search,Brand_Exact,9706,230,256.26,USD
+20260907,Paid Search,Generic_Ecommerce,15135,431,459.12,USD
+20260907,Paid Search,Competitor_Terms,1584,42,42.45,USD
+20260907,Referral,Affiliate_Program,3582,173,0.0,USD
+20260907,Email,Weekly_Newsletter,11807,150,6.99,USD
+20260907,Email,Abandoned_Cart,16106,761,44.75,USD
+20260907,Email,Promo_Blast,5256,191,9.72,USD
+20260907,Social,Prospecting_Lookalike,17875,789,420.8,USD
+20260907,Social,Retargeting_Cart,9432,252,152.91,USD
+20260907,Social,Awareness_Video,8423,393,279.55,USD
+20260908,Organic Search,Organic,4686,49,0.0,USD
+20260908,Paid Search,Brand_Exact,12018,252,284.75,USD
+20260908,Paid Search,Generic_Ecommerce,7604,437,586.83,USD
+20260908,Paid Search,Competitor_Terms,19048,955,1022.67,USD
+20260908,Referral,Affiliate_Program,820,34,0.0,USD
+20260908,Email,Weekly_Newsletter,11097,253,15.06,USD
+20260908,Email,Abandoned_Cart,8961,517,24.1,USD
+20260908,Email,Promo_Blast,6347,268,11.45,USD
+20260908,Social,Prospecting_Lookalike,14969,685,379.19,USD
+20260908,Social,Retargeting_Cart,16808,293,213.34,USD
+20260908,Social,Awareness_Video,13323,516,354.75,USD
+20260909,Organic Search,Organic,774,28,0.0,USD
+20260909,Paid Search,Brand_Exact,12261,327,373.33,USD
+20260909,Paid Search,Generic_Ecommerce,11643,163,201.43,USD
+20260909,Paid Search,Competitor_Terms,13088,563,641.44,USD
+20260909,Referral,Affiliate_Program,3787,177,0.0,USD
+20260909,Email,Weekly_Newsletter,2564,127,7.12,USD
+20260909,Email,Abandoned_Cart,1037,12,0.5,USD
+20260909,Email,Promo_Blast,17641,580,33.03,USD
+20260909,Social,Prospecting_Lookalike,1708,79,,USD
+20260909,Social,Retargeting_Cart,8452,380,213.72,USD
+20260909,Social,Awareness_Video,15448,626,495.47,USD
+20260910,Organic Search,Organic,2006,26,0.0,USD
+20260910,Paid Search,Brand_Exact,4458,262,342.06,USD
+20260910,Paid Search,Generic_Ecommerce,19934,372,371.23,USD
+20260910,Paid Search,Competitor_Terms,5906,188,284.9,USD
+20260910,Referral,Affiliate_Program,1492,16,,USD
+20260910,Email,Weekly_Newsletter,19955,1084,54.64,USD
+20260910,Email,Abandoned_Cart,9378,339,17.05,USD
+20260910,Email,Promo_Blast,16880,685,28.91,USD
+20260910,Social,Prospecting_Lookalike,6788,107,74.08,USD
+20260910,Social,Retargeting_Cart,7685,255,184.52,USD
+20260910,Social,Awareness_Video,16045,559,319.7,USD
+20260911,Organic Search,Organic,2259,60,0.0,USD
+20260911,Paid Search,Brand_Exact,6263,112,109.47,USD
+20260911,Paid Search,Generic_Ecommerce,19497,512,552.58,USD
+20260911,Paid Search,Competitor_Terms,3713,81,97.81,USD
+20260911,Referral,Affiliate_Program,645,35,0.0,USD
+20260911,Email,Weekly_Newsletter,6862,285,18.35,USD
+20260911,Email,Abandoned_Cart,4972,77,3.98,USD
+20260911,Email,Promo_Blast,5637,278,15.55,USD
+20260911,Social,Prospecting_Lookalike,3333,101,69.65,USD
+20260911,Social,Retargeting_Cart,975,45,34.17,USD
+20260911,Social,Awareness_Video,19891,1140,931.35,USD
+20260912,Organic Search,Organic,4330,50,0.0,USD
+20260912,Paid Search,Brand_Exact,8381,118,166.6,USD
+20260912,Paid Search,Generic_Ecommerce,8333,353,358.1,USD
+20260912,Paid Search,Competitor_Terms,19625,220,271.24,USD
+20260912,Referral,Affiliate_Program,3234,133,,USD
+20260912,Email,Weekly_Newsletter,11408,416,19.72,USD
+20260912,Email,Abandoned_Cart,7287,359,15.09,USD
+20260912,Email,Promo_Blast,12427,676,28.92,USD
+20260912,Social,Prospecting_Lookalike,18810,851,597.61,USD
+20260912,Social,Retargeting_Cart,16179,758,579.48,USD
+20260912,Social,Awareness_Video,11000,303,183.89,USD
+20260913,Organic Search,Organic,4183,146,0.0,USD
+20260913,Paid Search,Brand_Exact,15310,628,904.28,USD
+20260913,Paid Search,Generic_Ecommerce,15503,222,265.16,USD
+20260913,Paid Search,Competitor_Terms,4170,187,235.21,USD
+20260913,referral,Affiliate_Program,4635,262,0.0,USD
+20260913,Email,Weekly_Newsletter,1222,65,2.98,USD
+20260913,Email,Abandoned_Cart,11192,383,21.7,USD
+20260913,Email,Promo_Blast,10543,195,9.07,USD
+20260913,Social,Prospecting_Lookalike,12071,292,242.58,USD
+20260913,Social,Retargeting_Cart,6246,324,241.44,USD
+20260913,Social,Awareness_Video,10875,421,279.24,USD
+20260914,Organic Search,Organic,3016,52,0.0,USD
+20260914,Organic Search,Organic,3016,52,0.0,USD
+20260914,Paid Search,Brand_Exact,16864,816,1247.4,USD
+20260914,Paid Search,Generic_Ecommerce,17126,454,628.0,USD
+20260914,Paid Search,Competitor_Terms,19299,836,1203.63,USD
+20260914,Referral,Affiliate_Program,4123,226,0.0,USD
+20260914,Email,Weekly_Newsletter,15113,421,20.28,USD
+20260914,Email,Abandoned_Cart,9607,190,8.0,USD
+20260914,Email,Promo_Blast,13424,264,12.66,USD
+20260914,Social,Prospecting_Lookalike,5347,244,160.79,USD
+20260914,Social,Retargeting_Cart,15100,811,444.81,USD
+20260914,Social,Awareness_Video,9957,181,136.94,USD
+20260915,Organic Search,Organic,905,15,0.0,USD
+20260915,Paid Search,Brand_Exact,19855,949,961.4,USD
+20260915,Paid Search,Generic_Ecommerce,19109,912,950.45,USD
+20260915,paid search,Competitor_Terms,10395,537,613.44,USD
+20260915,paid search,Competitor_Terms,10395,537,613.44,USD
+20260915,Referral,Affiliate_Program,2351,58,0.0,USD
+20260915,Email,Weekly_Newsletter,6377,220,12.58,USD
+20260915,Email,Abandoned_Cart,2686,107,5.25,USD
+20260915,Email,Promo_Blast,4418,126,,USD
+20260915,Social,Prospecting_Lookalike,5288,137,110.35,USD
+20260915,Social,Retargeting_Cart,12164,151,92.83,USD
+20260915,Social,Awareness_Video,3596,143,82.13,USD
+20260916,Organic Search,Organic,2423,107,0.0,USD
+20260916,Organic Search,Organic,2423,107,0.0,USD
+20260916,Paid Search,Brand_Exact,17479,420,599.46,USD
+20260916,Paid Search,Generic_Ecommerce,16994,357,383.08,USD
+20260916,Paid Search,Competitor_Terms,17935,818,1129.95,USD
+20260916,Referral,Affiliate_Program,1275,71,0.0,USD
+20260916,Email,Weekly_Newsletter,17641,849,41.22,USD
+20260916,Email,Abandoned_Cart,5164,229,10.92,USD
+20260916,Email,Promo_Blast,4160,57,3.38,USD
+20260916,Social,Prospecting_Lookalike,17325,687,461.97,USD
+20260916,Social,Prospecting_Lookalike,17325,687,461.97,USD
+20260916,Social,Retargeting_Cart,3662,179,146.61,USD
+20260916,Social,Awareness_Video,3474,60,45.75,USD
+20260917,Organic Search,Organic,2181,76,0.0,USD
+20260917,Paid Search,Brand_Exact,9735,180,,USD
+20260917,Paid Search,Generic_Ecommerce,17021,894,1112.88,USD
+20260917,Paid Search,Competitor_Terms,12126,716,869.55,USD
+20260917,Referral,Affiliate_Program,4016,62,0.0,USD
+20260917,Email,Weekly_Newsletter,11251,390,19.35,USD
+20260917,Email,Abandoned_Cart,7901,297,14.04,USD
+20260917,Email,Promo_Blast,16086,916,,USD
+20260917,Social,Prospecting_Lookalike,13488,430,315.63,USD
+20260917,Social,Retargeting_Cart,3833,180,145.81,USD
+20260917,Social,Awareness_Video,13747,221,175.12,USD
+20260918,Organic Search,Organic,2436,116,0.0,USD
+20260918,Paid Search,Brand_Exact,16377,582,610.18,USD
+20260918,paid search,Generic_Ecommerce,4910,56,78.55,USD
+20260918,Paid Search,Competitor_Terms,11213,197,262.64,USD
+20260918,Referral,Affiliate_Program,4017,80,0.0,USD
+20260918,Email,Weekly_Newsletter,18411,200,11.82,USD
+20260918,Email,Abandoned_Cart,12831,412,16.85,USD
+20260918,Email,Promo_Blast,5878,203,8.8,USD
+20260918,Social,Prospecting_Lookalike,18646,825,582.42,USD
+20260918,Social,Retargeting_Cart,16710,660,424.24,USD
+20260918,social,Awareness_Video,19848,243,192.46,USD
+20260919,Organic Search,Organic,2995,86,0.0,USD
+20260919,Paid Search,Brand_Exact,8188,347,456.49,USD
+20260919,Paid Search,Generic_Ecommerce,1145,42,41.26,USD
+20260919,Paid Search,Competitor_Terms,1168,52,68.27,USD
+20260919,Referral,Affiliate_Program,4200,63,0.0,USD
+20260919,Email,Weekly_Newsletter,10314,290,14.76,USD
+20260919,Email,Abandoned_Cart,18058,373,17.39,USD
+20260919,Email,Promo_Blast,3513,161,8.77,USD
+20260919,Social,Prospecting_Lookalike,14495,296,230.46,USD
+20260919,Social,Retargeting_Cart,18193,466,305.07,USD
+20260919,Social,Awareness_Video,1109,45,30.95,USD
+20260920,Organic Search,Organic,4028,94,0.0,USD
+20260920,Paid Search,Brand_Exact,2462,88,103.71,USD
+20260920,Paid Search,Generic_Ecommerce,14766,450,664.25,USD
+20260920,Paid Search,Competitor_Terms,9905,419,466.71,USD
+20260920,Referral,Affiliate_Program,2211,110,0.0,USD
+20260920,Email,Weekly_Newsletter,7118,127,5.51,USD
+20260920,Email,Abandoned_Cart,1883,109,,USD
+20260920,Email,Promo_Blast,10264,547,34.2,USD
+20260920,Social,Prospecting_Lookalike,5105,111,78.32,USD
+20260920,Social,Retargeting_Cart,17711,400,322.99,USD
+20260920,Social,Awareness_Video,19647,920,719.35,USD
+20260921,Organic Search,Organic,1953,114,0.0,USD
+20260921,Paid Search,Brand_Exact,4201,108,131.14,USD
+20260921,Paid Search,Generic_Ecommerce,12394,418,493.51,USD
+20260921,Paid Search,Competitor_Terms,2291,102,146.19,USD
+20260921,Referral,Affiliate_Program,3172,174,0.0,USD
+20260921,Referral,Affiliate_Program,3172,174,0.0,USD
+20260921,Email,Weekly_Newsletter,13377,754,47.46,USD
+20260921,Email,Abandoned_Cart,5750,320,17.85,USD
+20260921,Email,Promo_Blast,3124,159,10.1,USD
+20260921,Social,Prospecting_Lookalike,3789,194,144.92,USD
+20260921,Social,Retargeting_Cart,11207,366,193.57,USD
+20260921,Social,Awareness_Video,4959,50,29.25,USD
+20260922,Organic Search,Organic,1265,66,0.0,USD
+20260922,Paid Search,Brand_Exact,9041,168,221.06,USD
+20260922,Paid Search,Generic_Ecommerce,13394,720,1099.34,USD
+20260922,Paid Search,Competitor_Terms,7994,442,682.66,USD
+20260922,Referral,Affiliate_Program,3713,148,0.0,USD
+20260922,Referral,Affiliate_Program,3713,148,0.0,USD
+20260922,Email,Weekly_Newsletter,17730,563,35.47,USD
+20260922,Email,Abandoned_Cart,6743,386,23.29,USD
+20260922,Email,Promo_Blast,7270,290,18.82,USD
+20260922,Social,Prospecting_Lookalike,5282,60,50.23,USD
+20260922,Social,Retargeting_Cart,15513,221,148.6,USD
+20260922,Social,Awareness_Video,13066,593,450.23,USD
+20260923,Organic Search,Organic,2123,71,0.0,USD
+20260923,Paid Search,Brand_Exact,1991,20,25.25,USD
+20260923,Paid Search,Generic_Ecommerce,18835,227,242.35,USD
+20260923,Paid Search,Competitor_Terms,3437,88,112.49,USD
+20260923,Referral,Affiliate_Program,2501,118,0.0,USD
+20260923,Email,Weekly_Newsletter,9142,327,16.64,USD
+20260923,Email,Abandoned_Cart,18708,985,55.59,USD
+20260923,Email,Promo_Blast,1675,56,2.47,USD
+20260923,Social,Prospecting_Lookalike,14967,416,312.18,USD
+20260923,Social,Retargeting_Cart,4551,125,73.28,USD
+20260923,Social,Awareness_Video,18956,1033,733.79,USD
+20260924,Organic Search,Organic,3611,202,0.0,USD
+20260924,Paid Search,Brand_Exact,4497,133,174.79,USD
+20260924,Paid Search,Generic_Ecommerce,16223,530,-812.55,USD
+20260924,Paid Search,Competitor_Terms,15347,402,562.37,USD
+20260924,Referral,Affiliate_Program,598,29,0.0,USD
+20260924,Email,Weekly_Newsletter,3532,105,4.67,USD
+20260924,Email,Abandoned_Cart,5839,171,8.56,USD
+20260924,Email,Promo_Blast,14667,686,43.25,USD
+20260924,Social,Prospecting_Lookalike,12540,446,302.89,USD
+20260924,Social,Retargeting_Cart,14345,725,521.64,USD
+20260924,Social,Awareness_Video,15688,687,501.84,USD
+20260925,Organic Search,Organic,887,21,0.0,USD
+20260925,Paid Search,Brand_Exact,10343,538,685.33,USD
+20260925,Paid Search,Generic_Ecommerce,4026,143,172.72,USD
+20260925,Paid Search,Competitor_Terms,19687,277,349.59,USD
+20260925,Referral,Affiliate_Program,3419,41,0.0,USD
+20260925,Email,Weekly_Newsletter,15243,627,29.24,USD
+20260925,Email,Abandoned_Cart,8997,482,-20.56,USD
+20260925,Email,Promo_Blast,16134,532,26.67,USD
+20260925,Social,Prospecting_Lookalike,12320,548,456.5,USD
+20260925,Social,Retargeting_Cart,6752,105,55.14,USD
+20260925,Social,Awareness_Video,8422,267,193.17,USD

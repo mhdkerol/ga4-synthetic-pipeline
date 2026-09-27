@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_ga4_events
+    description: "Cleaned GA4 events — one row per event. Blank user_pseudo_id nulled, duplicates removed, country casing normalized, currency label corrected."
+    columns:
+      - name: event_name
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['session_start','page_view','view_item','add_to_cart',
+                         'begin_checkout','add_shipping_info','add_payment_info','purchase']
+      - name: event_date
+        tests: [not_null]
+      - name: event_timestamp
+        tests: [not_null]
+      - name: ga_session_id
+        tests: [not_null]
+      - name: channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Direct','Organic Search','Paid Search','Referral','Social','Email']
+      - name: country
+        tests: [not_null]
+      - name: currency
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['USD']
+              config:
+                where: "currency is not null"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - user_pseudo_id
+              - ga_session_id
+              - event_name
+              - event_timestamp
