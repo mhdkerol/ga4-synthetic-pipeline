@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_sessions
+    description: One row per session (user_pseudo_id + ga_session_id), rolled up from staged GA4 events. Rows with a blank user or session ID are excluded.
+    columns:
+      - name: session_key
+        data_tests:
+          - unique
+          - not_null
+      - name: user_pseudo_id
+        data_tests:
+          - not_null
+      - name: session_start_ts
+        data_tests:
+          - not_null

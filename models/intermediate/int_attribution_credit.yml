@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_attribution_credit
+    description: One row per credited touchpoint per attribution model. Credit sums to 1.0 per conversion per model.
+    columns:
+      - name: credit_key
+        data_tests: [unique, not_null]
+      - name: channel
+        data_tests: [not_null]
+      - name: attribution_model
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['first_touch', 'last_touch', 'linear', 'position_based']
