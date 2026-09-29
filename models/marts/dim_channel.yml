@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_channel
+    description: One row per marketing channel, combining the channels found in sessions and in ad spend. channel_type is a manual Paid/Unpaid mapping.
+    columns:
+      - name: channel_key
+        data_tests: [unique, not_null]
+      - name: channel_name
+        data_tests:
+          - unique
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Direct', 'Organic Search', 'Paid Search', 'Referral', 'Social', 'Email']
+      - name: channel_type
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Paid', 'Unpaid']
