@@ -33,7 +33,7 @@ converted as (
     select
         * except(event_value_raw, event_currency),
         event_value_raw as event_value_usd,
-        {{ normalize_currency_to_usd('event_currency') }} as currency
+        {{ label_currency_as_usd('event_currency') }} as currency
     from renamed
 ),
 
