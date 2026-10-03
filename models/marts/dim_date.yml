@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: One row per calendar day, from the first to the last date found in sessions or ad spend. Weeks start on Monday.
+    columns:
+      - name: date_day
+        data_tests: [unique, not_null]
