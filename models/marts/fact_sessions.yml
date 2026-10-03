@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_sessions
+    description: One row per session, with its channel and date keys and its engagement and purchase numbers. Device and country stay as plain columns by design.
+    columns:
+      - name: session_key
+        data_tests: [unique, not_null]
+      - name: channel_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_channel')
+                field: channel_key
+      - name: session_date
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_day
