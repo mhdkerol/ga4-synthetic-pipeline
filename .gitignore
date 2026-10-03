@@ -3,3 +3,5 @@ target/
 dbt_packages/
 logs/
 .envcontext.txt
+dbt_internal_packages/
+context.txt
