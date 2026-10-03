@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fact_attribution_credit
+    description: One row per credited touchpoint per attribution model. Credit sums to 1.0 per conversion per model. touch_date is the date of the touching session, so attributed revenue lands on the touch day, not the purchase day.
+    columns:
+      - name: credit_key
+        data_tests: [unique, not_null]
+      - name: conversion_session_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_sessions')
+                field: session_key
+      - name: touch_session_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_sessions')
+                field: session_key
+      - name: channel_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_channel')
+                field: channel_key
+      - name: touch_date
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_day
+      - name: attribution_model
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['first_touch', 'last_touch', 'linear', 'position_based']
