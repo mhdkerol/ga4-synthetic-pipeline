@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: marketing_performance
+    description: One row per channel per day (6 channels x 90 days = 540 rows), combining ad spend, sessions and attributed revenue for reporting. Attributed revenue is shown as one column per attribution model and lands on the touch day. spend is empty where there is no spend row (Direct) or the source value was missing. No ratios are stored here; ROAS, cost per click and click-through rate are calculated from summed totals.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - date_day
+              - channel_key
+    columns:
+      - name: channel_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_channel')
+                field: channel_key
+      - name: date_day
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_day
+      - name: channel_name
+        data_tests: [not_null]
+      - name: channel_type
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Paid', 'Unpaid']
+      - name: sessions
+        data_tests: [not_null]
+      - name: purchase_revenue_usd
+        data_tests: [not_null]
