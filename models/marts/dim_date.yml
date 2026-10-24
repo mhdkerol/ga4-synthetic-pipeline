@@ -2,7 +2,10 @@ version: 2
 
 models:
   - name: dim_date
-    description: One row per calendar day, from the first to the last date found in sessions or ad spend. Weeks start on Monday.
+    description: One row per calendar day, from the first to the last date found in sessions or ad spend. Weeks start on Monday. Also serves as the MetricFlow time spine.
+    time_spine:
+      standard_granularity_column: date_day
     columns:
       - name: date_day
+        granularity: day
         data_tests: [unique, not_null]

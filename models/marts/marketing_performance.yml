@@ -3,14 +3,24 @@ version: 2
 models:
   - name: marketing_performance
     description: One row per channel per day (6 channels x 90 days = 540 rows), combining ad spend, sessions and attributed revenue for reporting. Attributed revenue is shown as one column per attribution model and lands on the touch day. spend is empty where there is no spend row (Direct) or the source value was missing. No ratios are stored here; ROAS, cost per click and click-through rate are calculated from summed totals.
+
+    semantic_model:
+      enabled: true
+    agg_time_dimension: date_day
+    primary_entity: marketing_performance
+
     data_tests:
       - dbt_utils.unique_combination_of_columns:
           arguments:
             combination_of_columns:
               - date_day
               - channel_key
+
     columns:
       - name: channel_key
+        entity:
+          type: foreign
+          name: channel
         data_tests:
           - not_null
           - relationships:
@@ -18,6 +28,9 @@ models:
                 to: ref('dim_channel')
                 field: channel_key
       - name: date_day
+        granularity: day
+        dimension:
+          type: time
         data_tests:
           - not_null
           - relationships:
@@ -25,14 +38,112 @@ models:
                 to: ref('dim_date')
                 field: date_day
       - name: channel_name
+        dimension:
+          type: categorical
         data_tests: [not_null]
       - name: channel_type
+        dimension:
+          type: categorical
         data_tests:
           - not_null
           - accepted_values:
               arguments:
                 values: ['Paid', 'Unpaid']
+      - name: month_name
+        dimension:
+          type: categorical
+      - name: day_of_week_name
+        dimension:
+          type: categorical
       - name: sessions
         data_tests: [not_null]
       - name: purchase_revenue_usd
         data_tests: [not_null]
+
+    metrics:
+      # simple metrics: each one adds up a single column
+      - name: total_spend
+        type: simple
+        agg: sum
+        expr: spend
+        description: Total ad spend in USD. Empty spend values are ignored, not treated as zero.
+      - name: total_impressions
+        type: simple
+        agg: sum
+        expr: impressions
+      - name: total_clicks
+        type: simple
+        agg: sum
+        expr: clicks
+      - name: total_sessions
+        type: simple
+        agg: sum
+        expr: sessions
+      - name: total_purchasing_sessions
+        type: simple
+        agg: sum
+        expr: purchasing_sessions
+      - name: total_purchase_revenue
+        type: simple
+        agg: sum
+        expr: purchase_revenue_usd
+        description: Revenue from purchasing sessions in USD, counted on the purchase day.
+      - name: first_touch_revenue
+        type: simple
+        agg: sum
+        expr: first_touch_revenue_usd
+        description: Revenue credited under first-touch attribution, counted on the touch day.
+      - name: last_touch_revenue
+        type: simple
+        agg: sum
+        expr: last_touch_revenue_usd
+        description: Revenue credited under last-touch attribution, counted on the touch day.
+      - name: linear_revenue
+        type: simple
+        agg: sum
+        expr: linear_revenue_usd
+        description: Revenue credited under linear attribution, counted on the touch day.
+      - name: position_based_revenue
+        type: simple
+        agg: sum
+        expr: position_based_revenue_usd
+        description: Revenue credited under position-based (U-shaped) attribution, counted on the touch day.
+
+      # ratio metrics: each one divides one summed metric by another
+      - name: roas_first_touch
+        type: ratio
+        numerator: first_touch_revenue
+        denominator: total_spend
+        description: Return on ad spend under first-touch attribution.
+      - name: roas_last_touch
+        type: ratio
+        numerator: last_touch_revenue
+        denominator: total_spend
+        description: Return on ad spend under last-touch attribution.
+      - name: roas_linear
+        type: ratio
+        numerator: linear_revenue
+        denominator: total_spend
+        description: Return on ad spend under linear attribution.
+      - name: roas_position_based
+        type: ratio
+        numerator: position_based_revenue
+        denominator: total_spend
+        description: Return on ad spend under position-based attribution.
+      - name: cost_per_click
+        type: ratio
+        numerator: total_spend
+        denominator: total_clicks
+      - name: click_through_rate
+        type: ratio
+        numerator: total_clicks
+        denominator: total_impressions
+      - name: session_conversion_rate
+        type: ratio
+        numerator: total_purchasing_sessions
+        denominator: total_sessions
+      - name: cost_per_purchase
+        type: ratio
+        numerator: total_spend
+        denominator: total_purchasing_sessions
+        description: Spend divided by purchasing sessions. Used instead of CAC because the data has no new-versus-returning customer information.
