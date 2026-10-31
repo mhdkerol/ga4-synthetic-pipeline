@@ -1,4 +1,4 @@
 Faker==40.39.0
 dbt-bigquery==1.12.1
 dbt-core==1.12.5
-dbt-metricflow==0.15.0dbt-metricflow==0.15.0
+dbt-metricflow==0.15.0

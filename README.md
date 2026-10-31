@@ -1,46 +1,67 @@
-# ga4-synthetic-pipeline
+# YouTube Analytics Engineering Pipeline
 
-Multi-source marketing attribution modeling in dbt and BigQuery. Reconciles GA4-style event data and ad spend, which sit at different grains, into a star schema, models multi-touch attribution across user journeys, and (planned) defines metrics once in a dbt semantic layer.
-
-> **Status: in progress.** Staging and intermediate layers are built and tested. Marts, semantic layer and dashboard are not built yet — see [Project Status](#project-status).
+An end-to-end analytics engineering project that ingests YouTube data using the YouTube Data API v3, stores raw data in Google Cloud Storage, transforms it with dbt following the medallion architecture (ELT pattern), and automates the full pipeline with GitHub Actions. Built to demonstrate core AE skills in pipeline design, dimensional modelling, data quality, and documentation using a real-world marketing analytics use case.
 
 ---
 
-## ⚠️ Synthetic Data Disclosure
+## Architecture Diagram
 
-All data in this project is synthetic, generated with [Faker](https://faker.readthedocs.io/) and Python's standard library. My GA4 property has no collected traffic, so I generated event data **modeled on** the GA4 BigQuery export schema: nested `event_params`, `device`, `geo`, `traffic_source` and `ecommerce` records, with `ga_session_id` and `ga_session_number` as the session fields.
+![Architecture Diagram](docs/architecture.png)
 
-It is not a byte-for-byte replica of a real export and has not been validated against one. One deliberate simplification: in this dataset `traffic_source.medium` holds channel-group labels (e.g. "Paid Search", "Direct") instead of raw GA4 medium values like `cpc` or `organic`, so it joins to ad spend directly.
+---
 
-Only the underlying data is fabricated. The pipeline, modeling and tests on top of it are real, but **attribution results on synthetic data demonstrate the method, not real channel performance.**
+## Data Lineage
+
+![dbt Lineage Graph](docs/lineage.png)
+
+> Generated with `dbt docs generate`. Lineage covers the full pipeline from YouTube API sources through silver staging models to the gold star schema, with the Looker Studio dashboard as the downstream exposure. `fct_searches` and `fct_comments` are fully built and tested but not connected to the dashboard — included as complete deliverables demonstrating the full data model.
+
+---
+
+## dbt Documentation
+
+![dbt Docs Site](docs/dbt_docs.png)
+
+All models, columns, and tests are fully documented in dbt. Descriptions cover grain, business logic, known data anomalies (e.g. `engagement_rate > 1` from external embeds), SCD Type 2 behaviour on `dim_channels`, and `rank_change` interpretation in `fct_searches`.
+
+---
+
+## Dashboard
+
+**YouTube Analytics Dashboard** — [View Live](https://datastudio.google.com/reporting/b1613135-f59a-499a-954f-48be1660cb7e/page/0UbvF)
+
+![Dashboard](docs/dashboard.png)
+
+Built in Looker Studio on top of the gold layer star schema. Three pages covering market landscape, video performance drivers, and channel intelligence. The dashboard serves as a consumption layer to validate the pipeline output is accurate and queryable. Primary engineering work is in the dbt transformation layer.
 
 ---
 
 ## Architecture Flow
 
 ```
-Faker Synthetic Generators
-(data_generation/generate_ga4_events.py, generate_adspend.py)
+YouTube Data API v3
         ↓
-BigQuery raw tables — ga4_synthetic_raw dataset (manual upload)
-(raw_ga4_events, raw_ad_spend)
+Python Ingestion Script
         ↓
-dbt Staging  ✅
-(unnest event_params, dedupe, normalize casing/currency)
+Google Cloud Storage — Bronze Layer
+gs://bucket/bronze/youtube/{endpoint}/YYYY/MM/DD/
         ↓
-dbt Intermediate  ✅
-(int_sessions, int_channel_daily_spend, int_channel_daily_sessions, int_attribution_credit)
+BigQuery Bronze Tables
+(append only, day partitioned, duplicate check)
         ↓
-dbt Marts — Star Schema  (planned)
-(dim_channel, dim_date, fact_sessions, fact_ad_spend, fact_attribution_credit)
+dbt Source Freshness Check
         ↓
-dbt Marts — Reporting Table  (planned)
-(marketing_performance — flattened for BI)
+dbt Silver Layer
+(cast, deduplicate, filter nulls, rename)
         ↓
-dbt MetricFlow Semantic Layer  (planned)
-(ROAS, CAC, CTR defined once)
+dbt Snapshot — SCD Type 2
+(channel history tracking)
         ↓
-Power BI Dashboard  (planned)
+dbt Gold Layer
+(star schema, business metrics)
+        ↓
+Looker Studio Dashboard
+GitHub Actions — orchestrates & automates the full pipeline
 ```
 
 ---
@@ -49,208 +70,321 @@ Power BI Dashboard  (planned)
 
 | Layer | Tool |
 |---|---|
-| Synthetic Data Generation | Python 3.13, Faker |
-| Warehouse | BigQuery |
-| Transformation | dbt-core 1.12, dbt-bigquery 1.12 |
-| Testing | dbt data tests, singular tests, `dbt_utils` |
-| Semantic Layer | dbt MetricFlow *(planned)* |
-| Dashboard | Power BI *(planned)* |
+| Language | Python 3.11 |
+| Ingestion | `google-api-python-client` |
+| Secrets | `python-dotenv` + `.env` |
+| IDE | VS Code |
+| Raw Storage | Google Cloud Storage (GCS) |
+| Warehouse | BigQuery (`yt-ae-project`) |
+| Transformation | dbt-bigquery 1.11.1 |
+| Documentation | dbt docs (models, columns, lineage, exposures) |
+| Data Quality | dbt tests + source freshness checks |
+| Orchestration | GitHub Actions (automated weekly) |
+| Version Control | Git + GitHub |
+| Dashboard | Looker Studio |
 
 ---
 
 ## Project Structure
 
 ```
-ga4-synthetic-pipeline/
+youtube-analytics-API/
+├── .env                              ← secrets (never committed)
+├── .env.example                      ← env template
 ├── .gitignore
-├── dbt_project.yml
-├── packages.yml
-├── package-lock.yml
 ├── requirements.txt
-├── README.md
-├── data_generation/
-│   ├── generate_ga4_events.py
-│   ├── generate_adspend.py
-│   ├── ga4_synthetic_events_v2.jsonl
-│   └── ga4_synthetic_adspend.csv
-├── macros/
-│   └── normalize_currency_to_usd.sql
-├── models/
-│   ├── staging/
-│   │   ├── sources.yml
-│   │   ├── stg_ga4_events.sql / .yml
-│   │   └── stg_ad_spend.sql / .yml
-│   ├── intermediate/
-│   │   ├── int_sessions.sql / .yml
-│   │   ├── int_channel_daily_spend.sql
-│   │   ├── int_channel_daily_sessions.sql
-│   │   ├── int_channel_daily.yml
-│   │   ├── int_attribution_credit.sql
-│   │   └── int_attribution_credit.yml
-│   └── marts/            (planned)
-├── tests/
-│   └── assert_credit_sums_to_one.sql
-├── analyses/
-├── seeds/
-└── snapshots/
+├── docs/
+│   ├── architecture.png              ← architecture diagram
+│   ├── erd.png                       ← entity relationship diagram
+│   ├── lineage.png                   ← dbt lineage graph
+│   ├── dbt_docs.png                  ← dbt docs site screenshot
+│   └── dashboard.png                 ← Looker Studio screenshot
+├── .github/
+│   └── workflows/
+│       └── youtube_pipeline.yml      ← GitHub Actions pipeline
+├── ingestion/
+│   ├── youtube_ingestion.py          ← YouTube API → GCS
+│   └── load_gcs_to_bigquery.py       ← GCS → BigQuery
+└── transformation/
+    └── youtube_analytics/            ← dbt project root
+        ├── dbt_project.yml
+        ├── packages.yml              ← dbt_utils
+        ├── macros/
+        │   └── generate_schema_name.sql
+        ├── models/
+        │   ├── exposures.yml         ← Looker Studio dashboard exposure
+        │   ├── silver/
+        │   │   ├── sources.yml       ← source definitions + freshness config
+        │   │   ├── schema.yml        ← silver model + column descriptions + tests
+        │   │   ├── stg_youtube_videos.sql
+        │   │   ├── stg_youtube_channels.sql
+        │   │   ├── stg_youtube_comments.sql
+        │   │   ├── stg_youtube_searches.sql
+        │   │   └── stg_youtube_categories.sql
+        │   └── gold/
+        │       ├── schema.yml        ← gold model + column descriptions + tests + relationships
+        │       ├── dim_dates.sql
+        │       ├── dim_channels.sql
+        │       ├── dim_categories.sql
+        │       ├── fct_video_performance.sql
+        │       ├── fct_comments.sql
+        │       └── fct_searches.sql
+        └── snapshots/
+            └── snp_youtube_channels.sql
 ```
 
 ---
 
 ## Data Sources
 
-**GA4 synthetic events** (`raw_ga4_events`) — ~2,000 users, 90-day window, full e-commerce funnel (`session_start` → `purchase`). Users have multi-session journeys (50% single-touch, 30% two-touch, 15% three-touch, 5% four-touch), so attribution credit can be split across real touchpoints rather than a single visit.
+All data is pulled from the **YouTube Data API v3** across 5 endpoints:
 
-**Ad spend data** (`raw_ad_spend`) — daily spend, impressions and clicks by channel and campaign, same 90-day window. Channel names match the GA4 channel labels so the two sources join on channel and date.
-
-| Dataset | Purpose |
+| Endpoint | Data |
 |---|---|
-| `ga4_synthetic_raw` | Raw tables: `raw_ga4_events`, `raw_ad_spend` |
-| `ga4_synthetic_dbt` | dbt-built staging / intermediate / marts models |
+| Search | Video IDs by keyword, search rank, retrieved timestamp |
+| Videos | Stats, duration, tags, category, caption, definition |
+| Channels | Subscribers, views, country, topics, keywords |
+| Comments | Comment text, likes, reply count, author |
+| Video Categories | Category ID to name mapping |
 
-### Loading raw data
+### Search Keywords (Marketing Theme)
 
-The two files in `data_generation/` are uploaded to BigQuery manually through the console. There is no ingestion layer by design, since the data is static.
-
-| File | BigQuery table |
-|---|---|
-| `ga4_synthetic_events_v2.jsonl` | `ga4_synthetic_raw.raw_ga4_events` |
-| `ga4_synthetic_adspend.csv` | `ga4_synthetic_raw.raw_ad_spend` |
+```python
+KEYWORDS = [
+    "digital marketing tutorial",
+    "social media strategy",
+    "seo tips 2025",
+    "content marketing",
+    "email marketing",
+    "google ads tutorial",
+    "influencer marketing",
+    "youtube growth tips",
+    "brand strategy",
+    "marketing analytics",
+    "digital marketing for beginners",
+    "how to start digital marketing",
+    "online marketing tutorial",
+    "how to grow on youtube",
+    "youtube algorithm explained",
+    "youtube seo tips",
+    "youtube thumbnail tips",
+    "youtube content strategy",
+    "instagram marketing strategy",
+    "tiktok marketing tips",
+    "facebook ads tutorial",
+    "how to go viral on youtube",
+    "how to get more views",
+    "how to increase engagement",
+    "content creation tips",
+    "short form video strategy",
+    "youtube shorts growth",
+    "ai marketing tools",
+    "chatgpt for marketing",
+    "keyword research tutorial"
+]
+```
 
 ---
 
 ## Data Model
 
-The three core grains are different — session events, channel-day spend, and touchpoints within a conversion journey — so a star schema keeps each one honest. The reporting mart flattens everything to channel and day for the dashboard.
+### BigQuery Datasets
 
-**Intermediate models (built):**
-
-| Model | Grain |
+| Dataset | Purpose |
 |---|---|
-| `int_sessions` | One row per session (`user_pseudo_id` + `ga_session_id`) |
-| `int_channel_daily_spend` | One row per channel per day |
-| `int_channel_daily_sessions` | One row per channel per day |
-| `int_attribution_credit` | One row per conversion × touchpoint × attribution model |
+| `youtube_bronze` | Raw tables from GCS, append only, day partitioned |
+| `youtube_silver` | dbt staging models: clean, typed, deduplicated |
+| `snapshots` | SCD Type 2 channel history |
+| `youtube_gold` | dbt mart models: star schema, business metrics |
 
-**Facts (planned):** `fact_sessions`, `fact_ad_spend`, `fact_attribution_credit`
-**Dimensions (planned):** `dim_channel` (union of channels from both sources), `dim_date`
-**Reporting mart (planned):** `marketing_performance`
+### Entity Relationship Diagram
 
----
+![ERD](docs/erd.png)
 
-## Multi-Touch Attribution
+Star schema with three fact tables (`fct_video_performance`, `fct_comments`, `fct_searches`) and three dimension tables (`dim_channels`, `dim_categories`, `dim_dates`). `dim_channels` is sourced from an SCD Type 2 snapshot — filter `is_current = true` when joining.
 
-`int_attribution_credit` treats each purchasing session as a conversion. A conversion's journey is every session by that user up to and including the purchasing session, ordered by session start time. Credit is then distributed four ways, and credit sums to 1.0 per conversion per model (enforced by a singular test):
+### Star Schema (Gold Layer)
 
-| Model | Rule |
-|---|---|
-| First touch | 100% to the first session |
-| Last touch | 100% to the last session |
-| Linear | Equal share to every session |
-| Position-based (U-shaped) | 40% first, 40% last, 20% split across the middle; a one-touch journey gets 100%, a two-touch journey gets 50/50 |
+**Fact Tables:**
 
-Assumptions: no lookback window (a journey is the user's full history), Direct is treated like any other channel, and a user with several purchases has overlapping journeys.
-
-**Revenue by channel and model (synthetic data — illustrates method only; every model totals $29,428.20 across 338 conversions):**
-
-| Channel | First touch | Last touch | Linear | Position-based |
-|---|---|---|---|---|
-| Direct | 5,268.84 | 7,863.25 | 6,994.23 | 6,806.47 |
-| Email | 4,249.04 | 7,373.23 | 6,340.66 | 6,050.61 |
-| Organic Search | 4,848.90 | 5,583.79 | 5,487.13 | 5,401.31 |
-| Paid Search | 7,318.39 | 4,978.90 | 5,433.37 | 5,744.72 |
-| Referral | 4,438.90 | 1,569.59 | 2,704.32 | 2,850.29 |
-| Social | 3,304.13 | 2,059.44 | 2,468.50 | 2,574.81 |
-
-Half of all users have a single touch, so all four models give them identical credit. The models can only differ on multi-touch journeys.
-
----
-
-## Data Quality Issues Handled
-
-| Issue | Rate | Fix |
+| Model | Grain | Key Metrics |
 |---|---|---|
-| Blank `user_pseudo_id` | ~3% | Converted to `NULL` in staging; those sessions are then excluded from `int_sessions` because they can't be tied to a journey (~108 sessions, including 9 of 347 purchases) |
-| Duplicate double-fired events | ~2% | Deduped via `ROW_NUMBER()`, verified with a uniqueness test |
-| Lowercase `geo.country` | ~5% | `INITCAP()` |
-| Currency label mismatch (5% of purchases tagged MYR) | ~5% | Corrected the label to USD without rescaling the value — the underlying amount was never actually in MYR terms, so dividing by an exchange rate would have introduced a distortion rather than fixing one |
-| `discount_code` present only in last 30 days | last 30d | Left `NULL` for older events — schema evolution, not backfilled |
-| Ad spend duplicate rows | ~3% | Deduped via `ROW_NUMBER()` |
-| Ad spend missing `spend` | ~2% | Left `NULL` — aggregations skip nulls |
-| Ad spend negative `spend` | ~1% | Nulled as invalid |
-| Ad spend lowercase channel | ~3% | `INITCAP()` |
+| `fct_video_performance` | One row per video | `engagement_rate`, `like_to_view_ratio`, `comment_to_view_ratio`, `video_age_days` |
+| `fct_comments` | One row per comment | `has_likes`, `has_replies`, `was_updated`, `comment_age_days` |
+| `fct_searches` | One row per keyword + video + date | `search_rank`, `rank_change`, `keyword_daily_rank` |
 
-**30 dbt data tests across staging and intermediate.**
+**Dimension Tables:**
+
+| Model | Description |
+|---|---|
+| `dim_channels` | Channel info with `channel_tier` (Nano/Micro/Macro/Mega) and `avg_views_per_video`. Sourced from SCD Type 2 snapshot |
+| `dim_categories` | YouTube category lookup |
+| `dim_dates` | Full date spine 2005–2030 with week, month, quarter, weekend flag |
+
+### Silver Layer Rules
+
+- Cast types, deduplicate, filter nulls, rename. No business logic.
+- Simple extractions only: `EXTRACT(HOUR)`, `ARRAY_LENGTH`, boolean flags, ISO 8601 duration parsing
+- All business metrics, ratios, and classifications belong in gold
+
+### Snapshot — SCD Type 2
+
+Tracks historical changes on channel metrics using dbt's `check` strategy:
+
+```
+check_cols: subscriber_count, video_count, total_view_count,
+            channel_name, country, keywords
+```
+
+Current record identified by `dbt_valid_to IS NULL`. Always filter `is_current = true` when joining `dim_channels` to fact tables.
+
+---
+
+## Pipeline Automation (GitHub Actions)
+
+The full pipeline runs automatically every week on GitHub's servers. No local machine required.
+
+```
+[Scheduled weekly — Wednesday 3am MYT]
+            ↓
+1.  Checkout repo
+2.  Install Python dependencies
+3.  Write GCP credentials from secret
+4.  Run youtube_ingestion.py       →  GCS bronze
+5.  Run load_gcs_to_bigquery.py    →  BigQuery bronze
+6.  dbt deps
+7.  dbt source freshness           ←  check data is fresh
+8.  dbt run -s silver
+9.  dbt test -s silver             ←  fail fast
+10. dbt snapshot
+11. dbt run -s gold
+12. dbt test -s gold
+13. Email alert on failure
+```
+
+**Fail fast principle:** source freshness and silver tests run before gold. A failure stops the pipeline early and triggers an email alert rather than propagating bad data downstream.
+
+Pipeline can also be triggered manually at any time from the GitHub Actions tab.
+
+---
+
+## Data Quality
+
+| Test Type | Applied To |
+|---|---|
+| `unique` + `not_null` | All primary keys across silver and gold |
+| `not_null` | Critical foreign keys |
+| `accepted_values` | `is_hd`, `assignable`, `channel_tier` |
+| `relationships` | All FK to PK references across gold models |
+| `source freshness` | All 5 bronze tables (warn: 25hr, error: 49hr) |
+
+**Result: 56/56 dbt tests passing ✅ — 5/5 sources fresh ✅**
 
 ---
 
 ## Key Design Decisions
 
-**Star schema + flattened reporting table.** Different grains need normalization to model correctly; the dashboard needs one flat table to avoid live joins.
+**ELT over ETL:** Raw data lands in GCS and BigQuery first. All transformation happens inside BigQuery via dbt. Raw data is always preserved and reprocessable.
 
-**No ingestion or orchestration layer.** The pipeline starts from raw tables already in BigQuery, and the data is static — a scheduler for data that never changes adds nothing.
+**Bronze append only:** Bronze tables never modify or delete data. Each run appends a new day partition. A duplicate check prevents the same day being loaded twice.
 
-**Multi-touch attribution as the core modeling challenge**, built on journeys with genuine multi-session paths rather than single-visit data. Four models are kept side by side so they can be compared.
+**NDJSON format:** Files stored as newline-delimited JSON for native BigQuery load compatibility.
 
-**Currency fix corrects the label, not the value.** I investigated the flagged issue before fixing it and confirmed the raw amount was never in a different currency, so the fix is a relabel, not a conversion.
+**Date partitioned GCS paths:** The `YYYY/MM/DD` folder structure mirrors BigQuery day partitioning and makes targeted reprocessing straightforward.
 
-**Fixed exchange rate in a dbt macro, no live FX API.** Consistent with the no-orchestration design.
+**Star schema in gold:** Fact and dimension tables follow Kimball's star schema pattern. Normalised structure keeps models clean, testable, and reusable across multiple BI tools. Chosen over a single wide OBT table in dbt — see tradeoff note below.
 
-**Conventions.** YAML tests live next to their models and use the `data_tests` key; cross-model checks are singular tests in `tests/`.
+**OBT as a Looker Studio blend, not a dbt model:** A one-big-table joining all facts and dimensions could have been built in dbt, but was deliberately handled as a master blend in Looker Studio instead. This keeps the dbt gold layer clean, normalised, and reusable. The tradeoff is that the blend logic lives in the dashboard layer rather than being version-controlled in dbt, which is an acceptable tradeoff for this project scope.
 
-**Development approach.** Architecture and modeling decisions are mine. SQL and Python were written with AI assistance (Claude) and tested by me.
+**SCD Type 2 on channels:** Channel metrics like subscriber count change over time. dbt snapshots track historical changes so channel growth can be analysed over time. Current record identified by `is_current = true`.
 
----
+**Fail fast pipeline:** Source freshness and silver tests run before gold models. A data quality failure stops the pipeline early rather than propagating bad data into the mart layer.
 
-## Known Limitations
+**`SAFE_DIVIDE` for all ratios:** Prevents division by zero on metrics like `engagement_rate` when `view_count = 0`, returning NULL instead of crashing.
 
-- Attribution runs on synthetic journeys, so it shows that the method works, not which channels perform.
-- Channel values already match across the two sources by design, so `dim_channel` is a light conformance step; the harder problems are grain reconciliation and attribution.
-- Direct has sessions but no ad spend, as expected. Organic Search has ad spend rows, which is a quirk of the generated data.
-- Ad spend and staging dedupe use an `ORDER BY` on a column that is constant within each duplicate group, so which duplicate survives is arbitrary if duplicates differ.
-- `users` in `int_channel_daily_sessions` is a distinct count per channel-day and is not additive across days.
+**Exposures in dbt:** The Looker Studio dashboard is declared as a dbt exposure, connecting it to the lineage graph. This makes the full data journey visible end-to-end: API source to bronze to silver to gold to dashboard.
 
 ---
 
-## Project Status
+## Setup Instructions
 
-- [x] Synthetic data generation (Faker)
-- [x] BigQuery raw tables loaded
-- [x] dbt project scaffolded and connected
-- [x] Staging layer built and tested
-- [x] Intermediate layer built and tested (including multi-touch attribution)
-- [ ] Marts (star schema + reporting table)
-- [ ] dbt MetricFlow semantic layer
-- [ ] Power BI dashboard
-- [ ] Architecture diagram + ERD
+### 1. Clone the repo
 
----
+```bash
+git clone https://github.com/mhdkerol/youtube-analytics-API.git
+cd youtube-analytics-API
+```
 
-## Future Work
+### 2. Install Python dependencies
 
-- Third data source (CRM / customer LTV) for lifetime-value attribution
-- Product-level analysis using item-level event data
-- Historical FX rate table as a more precise alternative to the fixed rate
-- Lookback windows for attribution
+```bash
+pip install -r requirements.txt
+```
 
----
+### 3. Set up environment variables
 
-## Setup
+```bash
+cp .env.example .env
+```
+
+Fill in your values:
 
 ```
-git clone https://github.com/mhdkerol/ga4-synthetic-pipeline.git
-cd ga4-synthetic-pipeline
+YOUTUBE_API_KEY=your_youtube_api_key_here
+GCS_BUCKET_NAME=your_bucket_name_here
+GCP_PROJECT_ID=your_gcp_project_id_here
+```
 
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+### 4. Add GCP credentials
 
-# optional — data is already committed; the generators are seeded and deterministic
-python data_generation/generate_ga4_events.py
-python data_generation/generate_adspend.py
+Download your service account JSON key from GCP and save as `gcs_credentials.json` in the project root. It is listed in `.gitignore` and will never be committed.
 
-# dbt (requires your own BigQuery project and a profiles.yml, which is not in the repo)
+### 5. Set up dbt virtual environment
+
+```bash
+python -m venv dbt-venv
+dbt-venv\Scripts\activate        # Windows
+pip install dbt-bigquery==1.11.1
+```
+
+### 6. Configure dbt profile
+
+For local dbt runs, ensure you have a `profiles.yml` configured in `~/.dbt/` pointing to your BigQuery project. Example:
+
+```yaml
+youtube_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: your_gcp_project_id
+      dataset: youtube_gold
+      keyfile: /path/to/gcs_credentials.json
+      location: US
+      threads: 4
+```
+
+In GitHub Actions this is generated automatically from secrets. For local runs you need to set it up manually.
+
+### 7. Run ingestion manually (optional)
+
+```bash
+python ingestion/youtube_ingestion.py
+python ingestion/load_gcs_to_bigquery.py
+```
+
+### 8. Run dbt transformations manually (optional)
+
+```bash
+# From transformation/youtube_analytics/
 dbt deps
-dbt debug
-dbt build
+dbt source freshness
+dbt run -s silver
+dbt test -s silver
+dbt snapshot
+dbt run -s gold
+dbt test -s gold
+dbt docs generate
+dbt docs serve
 ```
